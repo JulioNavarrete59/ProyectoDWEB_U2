@@ -1,12 +1,25 @@
 package com.concesionaria.modelo;
 
+import jakarta.persistence.*;
+
+//Anotaciones
+@Entity
+//Nombre de la tabla
+@Table(name = "autos")
 public class autos {
     //Atributos
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private int idAuto;
+    @Column
     private String marca;
+    @Column
     private String modelo;
-    private String color;
+    @Column
     private String anio;
+    @Column
     private String precio;
+    @Column
     private String foto;
 
     //Constructor
@@ -27,14 +40,6 @@ public class autos {
 
     public void setModelo(String modelo) {
         this.modelo = modelo;
-    }
-
-    public String getColor() {
-        return color;
-    }
-
-    public void setColor(String color) {
-        this.color = color;
     }
 
     public String getAnio() {
@@ -65,7 +70,6 @@ public class autos {
         return "autos{" +
                 "marca='" + marca + '\'' +
                 ", modelo='" + modelo + '\'' +
-                ", color='" + color + '\'' +
                 ", anio='" + anio + '\'' +
                 ", precio='" + precio + '\'' +
                 ", foto='" + foto + '\'' +

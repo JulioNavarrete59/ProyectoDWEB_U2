@@ -3,4 +3,23 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd"
          version="5.0">
+    <welcome-file-list>
+        <welcome-file>index.xhtml</welcome-file>
+    </welcome-file-list>
+    <!-- Etiqueta para mapeo en Servlets -->
+    <servlet>
+        <!-- Nombre del Servlet -->
+        <servlet-name>Faces Servlet</servlet-name>
+        <!-- Clase del Servlet -->
+        <servlet-class>jakarta.faces.webapp.FacesServlet</servlet-class>
+        <!-- Carga del Servlet -->
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+    <!-- Mapeo de Servlets -->
+    <servlet-mapping>
+        <!-- Nombre del Servlet -->
+        <servlet-name>Faces Servlet</servlet-name>
+        <!-- Mapeo de URL -->
+        <url-pattern>*.xhtml</url-pattern>
+    </servlet-mapping>
 </web-app>
