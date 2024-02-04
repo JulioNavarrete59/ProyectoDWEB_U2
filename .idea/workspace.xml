@@ -1,15 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="ProyectoDWEB_U2:war exploded" />
+    </artifacts-to-build>
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1198bbe2-1f83-4002-ba41-e1c50ce99516" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/concesionaria/dao/AutosImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/concesionaria/idao/IAutosDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/concesionaria/modelo/JPAUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/concesionaria/controlador/indexController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/autos/crear.xhtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/autos/editar.xhtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/autos/index.xhtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/index.xhtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/concesionaria/controlador/AutosController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/concesionaria/controlador/AutosController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/concesionaria/modelo/autos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/concesionaria/modelo/autos.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,12 +29,20 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
+        <option value="jsf" />
         <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
   </component>
   <component name="ProjectColorInfo"><![CDATA[{
   "associatedIndex": 7
@@ -71,6 +88,21 @@
       <RunnerSettings RunnerId="Debug">
         <option name="DEBUG_PORT" value="9009" />
       </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
       <method v="2">
         <option name="Make" enabled="true" />
         <option name="BuildArtifacts" enabled="true">
@@ -87,7 +119,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1707081370647</updated>
-      <workItem from="1707081371688" duration="2048000" />
+      <workItem from="1707081371688" duration="3833000" />
     </task>
     <servers />
   </component>

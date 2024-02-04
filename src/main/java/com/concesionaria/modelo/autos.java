@@ -26,6 +26,12 @@ public class autos {
     public autos() {
     }
 
+    public int getIdAuto() {
+        return idAuto;
+    }
+    public void setIdAuto(int idAuto) {
+        this.idAuto = idAuto;
+    }
     public String getMarca() {
         return marca;
     }
@@ -68,6 +74,7 @@ public class autos {
     @Override
     public String toString() {
         return "autos{" +
+                "idAuto=" + idAuto +
                 "marca='" + marca + '\'' +
                 ", modelo='" + modelo + '\'' +
                 ", anio='" + anio + '\'' +

@@ -3,11 +3,20 @@ package com.concesionaria.controlador;
 import com.concesionaria.dao.AutosImpl;
 import com.concesionaria.idao.IAutosDao;
 import com.concesionaria.modelo.autos;
+import jakarta.enterprise.context.RequestScoped;
 import jakarta.faces.context.FacesContext;
+import jakarta.inject.Named;
+import jdk.jfr.Name;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
+import java.util.Objects;
 
+//Anotación para el controlador}
+@RequestScoped
+//Nombre del bean
+@Name(value = "autosBean")
 public class AutosController {
     IAutosDao autosDao = new AutosImpl();
     public List<autos> obtenerAutos(){
