@@ -1,8 +1,11 @@
 package com.concesionaria.controlador;
 
 import com.concesionaria.dao.AutosImpl;
+import com.concesionaria.dao.ClientesImpl;
 import com.concesionaria.idao.IAutosDao;
+import com.concesionaria.idao.IClientesDao;
 import com.concesionaria.modelo.autos;
+import com.concesionaria.modelo.clientes;
 import jakarta.enterprise.context.RequestScoped;
 import jakarta.faces.context.FacesContext;
 import jakarta.inject.Named;

@@ -10,7 +10,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1198bbe2-1f83-4002-ba41-e1c50ce99516" name="Changes" comment="">
-<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/autos/crear.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/autos/crear.xhtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/autos/index.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/autos/index.xhtml" afterDir="false" />
@@ -24,7 +23,6 @@
       <change afterPath="$PROJECT_DIR$/src/main/webapp/clientes/index.xhtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
->>>>>>> 286889bafc869edcee50d6bddbd22f50d8c5f654
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -173,12 +171,9 @@
       <option name="presentableId" value="Default" />
       <updated>1707081370647</updated>
       <workItem from="1707081371688" duration="4180000" />
-<<<<<<< HEAD
       <workItem from="1707230433020" duration="6068000" />
-=======
       <workItem from="1707230433020" duration="3021000" />
       <workItem from="1707233881295" duration="2453000" />
->>>>>>> 286889bafc869edcee50d6bddbd22f50d8c5f654
     </task>
     <servers />
   </component>
