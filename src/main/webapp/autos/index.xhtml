@@ -11,7 +11,7 @@
         <h:commandButton action="#{autosBean.nuevo()}" value="Agregar"></h:commandButton>
     </h:form>
     <h:form>
-        <h:dataTable value="#{autosBean.obtenerAutos}" var="auto" border="1">
+        <h:dataTable value="#{autosBean.obtenerAuto()}" var="auto" border="1">
             <h:column>
                 <f:facet name="header">ID</f:facet>
                 <h:outputText value="#{auto.idAuto}" />

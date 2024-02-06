@@ -5,7 +5,7 @@ import jakarta.persistence.*;
 //Anotaciones
 @Entity
 //Nombre de la tabla
-@Table(name = "autos")
+@Table(name = "auto")
 public class autos {
     //Atributos
     @Id

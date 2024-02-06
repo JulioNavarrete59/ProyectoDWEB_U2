@@ -16,10 +16,10 @@ import java.util.Objects;
 //Anotación para el controlador}
 @RequestScoped
 //Nombre del bean
-@Name(value = "autosBean")
+@Named(value = "autosBean")
 public class AutosController {
     IAutosDao autosDao = new AutosImpl();
-    public List<autos> obtenerAutos(){
+    public List<autos> obtenerAuto(){
         return autosDao.obtenerAutos();
     }
     public String editar (int id){
@@ -29,24 +29,24 @@ public class AutosController {
         Map<String, Object> sessionMap = FacesContext.getCurrentInstance().getExternalContext().getSessionMap();
         //Añadir el objeto usuario a la colección
         sessionMap.put("auto", oAutos);
-        return "/editarAutos.xhtml";
+        return "/editar.xhtml";
     }
-    public String actualizar(autos autos){
-        autosDao.modificar(autos);
-        return "/indexAutos.xhtml";
+    public String actualizar(autos auto){
+        autosDao.modificar(auto);
+        return "/index.xhtml";
     }
     public void eliminar (int id){
         autosDao.eliminar(id);
     }
     public String registrar(autos autos){
         autosDao.registrar(autos);
-        return "/indexAutos.xhtml";
+        return "/index.xhtml";
     }
     public String nuevo(){
-        autos oAutos = new autos();
+        autos oAuto = new autos();
         Map<String, Object> sessionMap = FacesContext.getCurrentInstance().getExternalContext().getSessionMap();
         //Añadir el objeto usuario a la colección
-        sessionMap.put("auto", oAutos);
-        return "/crearAutos.xhtml";
+        sessionMap.put("auto", oAuto);
+        return "/autos/crear.xhtml";
     }
 }
