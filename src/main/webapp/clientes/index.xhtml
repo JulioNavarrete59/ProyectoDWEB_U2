@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+<f:view>
+    <h:outputLabel value="CLIENTES"/>
+    <h:form>
+        <h:commandButton action="#{clientesBean.nuevo()}" value="Agregar"></h:commandButton>
+    </h:form>
+    <h:form>
+        <h:dataTable value="#{clientesBean.obtenerCliente()}" var="cliente" border="1">
+            <h:column>
+                <f:facet name="header">ID</f:facet>
+                <h:outputText value="#{cliente.idCliente}" />
+            </h:column>
+            <h:column>
+                <f:facet name="header">Nombre</f:facet>
+                <h:outputText value="#{cliente.nombre}" />
+            </h:column>
+            <h:column>
+                <f:facet name="header">Apellido</f:facet>
+                <h:outputText value="#{cliente.apellido}" />
+            </h:column>
+            <h:column>
+                <f:facet name="header">Cédula</f:facet>
+                <h:outputText value="#{cliente.cedula}" />
+            </h:column>
+            <h:column>
+                <f:facet name="header">Teléfono</f:facet>
+                <h:outputText value="#{cliente.telefono}" />
+            </h:column>
+            <h:column>
+                <f:facet name="header">Dirección</f:facet>
+                <h:outputText value="#{cliente.direccion}" />
+            </h:column>
+            <h:column>
+                <f:facet name="header">Correo</f:facet>
+                <h:outputText value="#{cliente.correo}" />
+            </h:column>
+        <h:column>
+            <f:facet name="header">Acciones</f:facet>
+            <h:commandButton value="Editar" action="#{clientesBean.editar(cliente.idCliente)}"/>
+            <h:commandButton value="Eliminar" action="#{clientesBean.eliminar(cliente.idCliente)}"/>
+        </h:column>
+        </h:dataTable>
+    </h:form>
+</f:view>
+</html>
