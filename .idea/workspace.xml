@@ -10,14 +10,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1198bbe2-1f83-4002-ba41-e1c50ce99516" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/concesionaria/controlador/indexController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/concesionaria/controlador/ClientesController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/concesionaria/dao/ClientesImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/concesionaria/idao/IClientesDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/concesionaria/modelo/clientes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/clientes/crear.xhtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/clientes/editar.xhtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/clientes/index.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/concesionaria/controlador/AutosController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/concesionaria/controlador/AutosController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/concesionaria/modelo/autos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/concesionaria/modelo/autos.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/autos/index.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/autos/index.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.xhtml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +59,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/julio/IdeaProjects/ProyectoDWEB_U2",
+    "last_opened_file_path": "D:/Stefany/Documentos/ESPE/6. SEXTO/DESARROLLO WEB/PARCIAL II/PROYECTO_U2/ProyectoDWEB_U2/src/main/webapp",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -69,9 +70,18 @@
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Stefany\Documentos\ESPE\6. SEXTO\DESARROLLO WEB\PARCIAL II\PROYECTO_U2\ProyectoDWEB_U2\src\main\webapp" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\julio\IdeaProjects\ProyectoDWEB_U2\src\main\webapp\autos" />
       <recent name="C:\Users\julio\IdeaProjects\ProyectoDWEB_U2\src\main\webapp" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.concesionaria.modelo" />
+      <recent name="com.concesionaria.idao" />
+      <recent name="com.concesionaria.dao" />
+      <recent name="com.concesionaria.controlador" />
     </key>
   </component>
   <component name="RunManager">
@@ -127,6 +137,7 @@
       <updated>1707081370647</updated>
       <workItem from="1707081371688" duration="4180000" />
       <workItem from="1707230433020" duration="3021000" />
+      <workItem from="1707233881295" duration="2453000" />
     </task>
     <servers />
   </component>
