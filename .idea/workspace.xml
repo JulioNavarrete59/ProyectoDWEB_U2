@@ -10,19 +10,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1198bbe2-1f83-4002-ba41-e1c50ce99516" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/concesionaria/modelo/detalleVenta.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/concesionaria/modelo/ventas.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/autos/crear.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/autos/crear.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/autos/index.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/autos/index.xhtml" afterDir="false" />
-=======
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/concesionaria/controlador/ClientesController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/concesionaria/dao/ClientesImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/concesionaria/idao/IClientesDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/concesionaria/modelo/clientes.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/clientes/crear.xhtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/clientes/editar.xhtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/clientes/index.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/autos/editar.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/autos/editar.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.xhtml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +61,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "settings.editor.selected.configurable": "advanced.settings",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -174,10 +166,22 @@
       <workItem from="1707230433020" duration="6068000" />
       <workItem from="1707230433020" duration="3021000" />
       <workItem from="1707233881295" duration="2453000" />
+      <workItem from="1707237938632" duration="642000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
