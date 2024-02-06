@@ -16,13 +16,20 @@ public class ventas {
     @Column
     private String fechaVenta;
     @Column
-    private float subtotal;
+    private float subtotal = 0;
     @Column
-    private float ice;
+    private float ice = 0;
     @Column
-    private float total;
+    private float total = 0;
     @Column
     private String metodoPago;
+    @ManyToOne
+    @JoinColumn(name = "cliente_id", referencedColumnName = "idCliente")
+    private clientes cliente;
+
+    @ManyToOne
+    @JoinColumn(name = "auto_id", referencedColumnName = "idAuto")
+    private autos auto;
 
     public ventas() {
     }
@@ -89,6 +96,22 @@ public class ventas {
 
     public void setMetodoPago(String metodoPago) {
         this.metodoPago = metodoPago;
+    }
+
+    public clientes getCliente() {
+        return cliente;
+    }
+
+    public void setCliente(clientes cliente) {
+        this.cliente = cliente;
+    }
+
+    public autos getAuto() {
+        return auto;
+    }
+
+    public void setAuto(autos auto) {
+        this.auto = auto;
     }
 
     @Override

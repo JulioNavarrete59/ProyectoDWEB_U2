@@ -2,6 +2,8 @@ package com.concesionaria.modelo;
 
 import jakarta.persistence.*;
 
+import java.util.List;
+
 //Anotaciones
 @Entity
 //Nombre de la tabla
@@ -23,6 +25,9 @@ public class clientes {
     private String direccion;
 
     private String correo;
+
+    @OneToMany(mappedBy = "cliente", cascade = CascadeType.ALL, orphanRemoval = true)
+    private List<ventas> ventasList;
 
     //Constructor vacío
     public clientes() {
@@ -98,6 +103,13 @@ public class clientes {
         this.correo = correo;
     }
 
+    public List<ventas> getVentasList() {
+        return ventasList;
+    }
+
+    public void setVentasList(List<ventas> ventasList) {
+        this.ventasList = ventasList;
+    }
     //toString
 
     @Override
