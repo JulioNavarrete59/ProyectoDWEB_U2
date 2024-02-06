@@ -6,12 +6,17 @@
       xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
       xmlns:f="http://xmlns.jcp.org/jsf/core">
 <f:view>
+    <h:head>
+        <title>Autos</title>
+        <h:outputStylesheet name="webjars/bootstrap/5.3.0/css/bootstrap.min.css" />
+    </h:head>
     <h:outputLabel value="AUTOS"/>
     <h:form>
-        <h:commandButton action="#{autosBean.nuevo()}" value="Agregar"></h:commandButton>
+        <h:commandButton action="#{autosBean.nuevo()}" value="Agregar" styleClass="btn btn-primary"></h:commandButton>
     </h:form>
+    <br/>
     <h:form>
-        <h:dataTable value="#{autosBean.obtenerAuto()}" var="auto" border="1">
+        <h:dataTable value="#{autosBean.obtenerAuto()}" var="auto" border="1" styleClass="table table-light">
             <h:column>
                 <f:facet name="header">ID</f:facet>
                 <h:outputText value="#{auto.idAuto}" />
@@ -38,8 +43,8 @@
             </h:column>
         <h:column>
             <f:facet name="header">Acciones</f:facet>
-            <h:commandButton value="Editar" action="#{autosBean.editar(auto.idAuto)}"/>
-            <h:commandButton value="Eliminar" action="#{autosBean.eliminar(auto.idAuto)}"/>
+            <h:commandButton value="Editar" action="#{autosBean.editar(auto.idAuto)}" styleClass="btn-warning"/>
+            <h:commandButton value="Eliminar" action="#{autosBean.eliminar(auto.idAuto)}" styleClass="btn-danger"/>
         </h:column>
         </h:dataTable>
     </h:form>
