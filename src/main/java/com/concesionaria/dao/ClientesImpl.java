@@ -18,7 +18,7 @@ public class ClientesImpl implements IClientesDao {
     @Override
     public void modificar(clientes clientes) {
         entityManager.getTransaction().begin();
-        entityManager.merge(autos);
+        entityManager.merge(clientes);
         entityManager.getTransaction().commit();
     }
 
