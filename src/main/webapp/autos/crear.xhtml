@@ -6,6 +6,27 @@
       xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
       xmlns:f="http://xmlns.jcp.org/jsf/core">
 <f:view>
-    <h:outputLabel value="Hello, world"/>
+    <h:head>
+        <title>Registro de Autos</title>
+        <h:outputStylesheet name="webjars/bootstrap/5.3.0/css/bootstrap.min.css" />
+    </h:head>
+    <h:form>
+        <h:panelGrid columns="2" cellspacing="20" border="1" styleClass="p-4 border rounded">
+            <f:facet name="header">
+                <h2 class="display-4 text-primary"><h:outputLabel value="Agregar Auto"/></h2>
+            </f:facet>
+            <h:outputLabel value="Marca"/>
+            <h:inputText value="#{autoBean.auto.marca}"/>
+            <h:outputLabel value="Modelo"/>
+            <h:inputText value="#{autoBean.auto.modelo}"/>
+            <h:outputLabel value="Año"/>
+            <h:inputText value="#{autoBean.auto.anio}"/>
+            <h:outputLabel value="Precio"/>
+            <h:inputText value="#{autoBean.auto.precio}"/>
+            <h:outputLabel value="Foto"/>
+            <h:inputFile value="#{autoBean.auto.foto}"/>
+            <h:commandButton value="Agregar" action="#{autosBean.registrar(auto)}" styleClass="btn-primary"/>
+        </h:panelGrid>
+    </h:form>
 </f:view>
 </html>

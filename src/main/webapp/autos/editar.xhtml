@@ -6,6 +6,25 @@
       xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
       xmlns:f="http://xmlns.jcp.org/jsf/core">
 <f:view>
-    <h:outputLabel value="Hello, world"/>
+    <h:head>
+        <title>Editar Autos</title>
+        <h:outputStylesheet name="webjars/bootstrap/5.3.0/css/bootstrap.min.css" />
+    </h:head>
+    <h:outputLabel value="Editar Autos"/>
+    <h:form>
+        <h:panelGrid columns="2" cellspacing="20" border="1" styleClass="p-4 border rounded">
+        <h:outputLabel value="ID" styleClass="form-label"/>
+        <h:inputText value="#{auto.idAuto}" readonly="true" disabled="false" styleClass="form-control"/>
+        <h:outputLabel value="Marca" styleClass="form-label"/>
+        <h:inputText value="#{auto.marca}" styleClass="form-control"/>
+        <h:outputLabel value="Modelo" styleClass="form-label"/>
+        <h:inputText value="#{auto.modelo}" styleClass="form-control"/>
+        <h:outputLabel value="Año" styleClass="form-label"/>
+        <h:inputText value="#{auto.anio}" styleClass="form-control"/>
+        <h:outputLabel value="Precio" styleClass="form-label"/>
+        <h:inputText value="#{auto.precio}" styleClass="form-control"/>
+        <h:commandButton value="Editar" action="#{autosBean.actualizar(auto)}"/>
+        </h:panelGrid>
+    </h:form>
 </f:view>
 </html>

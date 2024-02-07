@@ -2,6 +2,8 @@ package com.concesionaria.modelo;
 
 import jakarta.persistence.*;
 
+import java.util.List;
+
 //Anotaciones
 @Entity
 //Nombre de la tabla
@@ -21,6 +23,8 @@ public class autos {
     private String precio;
     @Column
     private String foto;
+    @OneToMany(mappedBy = "auto", cascade = CascadeType.ALL, orphanRemoval = true)
+    private List<ventas> ventasList;
 
     //Constructor
     public autos() {
@@ -71,6 +75,15 @@ public class autos {
     public void setFoto(String foto) {
         this.foto = foto;
     }
+
+    public List<ventas> getVentasList() {
+        return ventasList;
+    }
+
+    public void setVentasList(List<ventas> ventasList) {
+        this.ventasList = ventasList;
+    }
+
     @Override
     public String toString() {
         return "autos{" +
