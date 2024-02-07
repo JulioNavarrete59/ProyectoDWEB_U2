@@ -10,7 +10,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1198bbe2-1f83-4002-ba41-e1c50ce99516" name="Changes" comment="">
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+=======
+<<<<<<< HEAD
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/concesionaria/controlador/AutosController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/concesionaria/controlador/AutosController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/concesionaria/controlador/ClientesController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/concesionaria/controlador/ClientesController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/concesionaria/dao/ClientesImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/concesionaria/dao/ClientesImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.xhtml" afterDir="false" />
+=======
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/concesionaria/controlador/VentasController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/concesionaria/dao/VentasImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/concesionaria/idao/IVentasDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/concesionaria/modelo/autos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/concesionaria/modelo/autos.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/concesionaria/modelo/clientes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/concesionaria/modelo/clientes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/concesionaria/modelo/ventas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/concesionaria/modelo/ventas.java" afterDir="false" />
+>>>>>>> 33d7c96d57c5b0e886e78c44fe8e4c765f5a5e60
+>>>>>>> 55b9baa8ea78c696a11e3698d019b45a878f7910
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,6 +48,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="KubernetesApiProvider"><![CDATA[{
+  "isMigrated": true
+}]]></component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
     <option name="FILTER_WARNINGS" value="false" />
@@ -45,6 +67,7 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
+<<<<<<< HEAD
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
@@ -59,6 +82,31 @@
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;advanced.settings&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+=======
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "GlassFish Server.GlassFish 7.0.6.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/Stefany/Documentos/ESPE/6. SEXTO/DESARROLLO WEB/PARCIAL II/PROYECTO_U2/ProyectoDWEB_U2",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+<<<<<<< HEAD
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+=======
+    "settings.editor.selected.configurable": "advanced.settings",
+>>>>>>> 33d7c96d57c5b0e886e78c44fe8e4c765f5a5e60
+    "vue.rearranger.settings.migration": "true"
+>>>>>>> 55b9baa8ea78c696a11e3698d019b45a878f7910
   }
 }</component>
   <component name="RecentsManager">
@@ -77,7 +125,7 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration name="GlassFish 7.0.6" type="GlassfishConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="GlassFish 7.0.6" ALTERNATIVE_JRE_ENABLED="false">
+    <configuration name="GlassFish 7.0.6" type="GlassfishConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="GlassFish 7.0.11" ALTERNATIVE_JRE_ENABLED="true" ALTERNATIVE_JRE_PATH="C:/Program Files/Java/jdk-15.0.2">
       <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/ProyectoDWEB_U2-1.0-SNAPSHOT" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
@@ -222,6 +270,13 @@
       </method>
     </configuration>
   </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-17.0.10-corretto-17.0.10-4caba194b151-5cd809f4" />
+      </set>
+    </attachedChunks>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -233,9 +288,18 @@
       <workItem from="1707081371688" duration="4180000" />
       <workItem from="1707230433020" duration="6068000" />
       <workItem from="1707230433020" duration="3021000" />
+<<<<<<< HEAD
+      <workItem from="1707233881295" duration="3329000" />
+      <workItem from="1707327874506" duration="683000" />
+=======
       <workItem from="1707233881295" duration="2453000" />
+<<<<<<< HEAD
       <workItem from="1707237938632" duration="3825000" />
       <workItem from="1707267895167" duration="4595000" />
+=======
+      <workItem from="1707237938632" duration="2566000" />
+>>>>>>> 33d7c96d57c5b0e886e78c44fe8e4c765f5a5e60
+>>>>>>> 55b9baa8ea78c696a11e3698d019b45a878f7910
     </task>
     <servers />
   </component>
