@@ -1,10 +1,12 @@
 package com.concesionaria.controlador;
 
+import com.concesionaria.dao.AutosImpl;
 import com.concesionaria.dao.VentasImpl;
+import com.concesionaria.idao.IAutosDao;
 import com.concesionaria.idao.IVentasDao;
 import com.concesionaria.modelo.autos;
 import com.concesionaria.modelo.clientes;
-import com.concesionaria.modelo.empleados;
+import com.concesionaria.modelo.detalleVenta;
 import com.concesionaria.modelo.ventas;
 import jakarta.enterprise.context.RequestScoped;
 import jakarta.faces.application.FacesMessage;
@@ -16,12 +18,15 @@ import java.util.List;
 
 @RequestScoped
 @Named(value = "ventaBean")
-public class VentaController {
+public class VentasController {
 
     private IVentasDao ventasDao = new VentasImpl();
+    private IAutosDao autosDao = new AutosImpl();
     private List<autos> autosList;
     private List<clientes> clientesList;
     private List<empleados> empleadosList;
+
+    private List<detalleVenta> detalles;
 
     private ventas nuevaVenta;
     private List<ventas> ventasList;
@@ -31,7 +36,7 @@ public class VentaController {
     private float ice = 0;
     private float totalPagar = 0;
 
-    public VentaController() {
+    public VentasController() {
         nuevaVenta = new ventas();
         cars = new ArrayList<>();
         autosList = obtenerAutos();
@@ -42,60 +47,57 @@ public class VentaController {
 
     // Métodos para obtener listas
     public List<autos> obtenerAutos() {
-        // Implementa la lógica para obtener la lista de autos desde el DAO correspondiente
-        // Puedes utilizar el método autosDao.obtenerAutos()
-        return new ArrayList<>();
+        return ventasDao.obtenerAutos();
     }
 
     public List<clientes> obtenerClientes() {
-        // Implementa la lógica para obtener la lista de clientes desde el DAO correspondiente
-        // Puedes utilizar el método clientesDao.obtenerClientes()
-        return new ArrayList<>();
+        return ventasDao.obtenerClientes();
     }
 
     public List<empleados> obtenerEmpleados() {
-        // Implementa la lógica para obtener la lista de empleados desde el DAO correspondiente
-        // Puedes utilizar el método empleadosDao.obtenerEmpleados()
-        return new ArrayList<>();
+        return ventasDao.obtenerEmpleados();
     }
 
     public List<ventas> obtenerVentas() {
-        // Implementa la lógica para obtener la lista de ventas desde el DAO correspondiente
-        // Puedes utilizar el método ventasDao.obtenerVentas()
-        return new ArrayList<>();
+        return ventasDao.obtenerVentas();
     }
-
     // Métodos para el manejo de autos en la venta
-    public void agregarAuto() {
-        // Implementa la lógica para agregar un auto a la venta
-        // Puedes utilizar el método autosDao.obtenerAutoPorId(autoId) para obtener el auto por ID
-        // Añade el auto a la lista cars
-        // Actualiza los valores (total, ice, totalPagar) llamando al método updateValues()
+    public void agregarAuto(int autoId) {
+        autos auto = autosDao.obtenerAutosPorId(autoId);
+        cars.add(auto);
+        updateValues();
     }
 
-    public void cambiarAuto(int indice) {
-        // Implementa la lógica para cambiar un auto en la venta
-        // Puedes utilizar el método autosDao.obtenerAutoPorId(autoId) para obtener el nuevo auto por ID
-        // Actualiza los valores (total, ice, totalPagar) llamando al método updateValues()
+    public void cambiarAuto(int indice, int autoId) {
+        autos auto = autosDao.obtenerAutosPorId(autoId);
+        cars.set(indice, auto);
+        updateValues();
     }
 
-    public void cambiarCantidad(int indice) {
-        // Implementa la lógica para cambiar la cantidad de un auto en la venta
-        // Actualiza los valores (total, ice, totalPagar) llamando al método updateValues()
+    // Método para actualizar los valores de la venta
+    private void updateValues() {
+        actualizarValores();
     }
 
+    public void cambiarCantidad(int indice, int cantidad) {
+        autos auto = cars.get(indice);
+        auto.setCantidad(cantidad);
+        updateValues();
+    }
     public void actualizarValores() {
-        // Implementa la lógica para actualizar los valores (total, ice, totalPagar)
-        // Itera sobre la lista de autos y calcula los valores totales
-        // Llama al método updateValues() para actualizar los valores
+        this.subtotal = 0;
+        this.ice = 0;
+        for (detalleVenta detalle : detalles) {
+            this.subtotal += detalle.calcularSubtotal();
+            this.ice += detalle.calcularIce();
+        }
+        this.total = this.subtotal + this.ice;
     }
 
     // Método para guardar la venta
     public String guardarVenta() {
         try {
-            // Validación de los campos (puedes agregar más reglas según tus necesidades)
-            if (nuevaVenta.getCliente() == null || nuevaVenta.getEmpleado() == null || nuevaVenta.getFechaVenta() == null
-                    || nuevaVenta.getMetodoPago() == null || totalPagar <= 0) {
+            if (!validarVenta()) {
                 FacesContext.getCurrentInstance().addMessage(null,
                         new FacesMessage(FacesMessage.SEVERITY_ERROR, "Error de validación", "Todos los campos deben estar llenos y el total a pagar debe ser mayor que 0."));
                 return null;
@@ -123,11 +125,15 @@ public class VentaController {
 
             return "indexVentas?faces-redirect=true"; // Puedes redirigir a la página que desees
         } catch (Exception e) {
-            e.printStackTrace(); // Maneja la excepción según tus necesidades
+            // Maneja la excepción según tus necesidades
             FacesContext.getCurrentInstance().addMessage(null,
                     new FacesMessage(FacesMessage.SEVERITY_ERROR, "Error al registrar la venta.", null));
             return null;
         }
+    }
+    private boolean validarVenta() {
+        return nuevaVenta.getCliente() != null && nuevaVenta.getEmpleado() != null && nuevaVenta.getFechaVenta() != null
+                && nuevaVenta.getMetodoPago() != null && totalPagar > 0;
     }
 
     // Getters y setters

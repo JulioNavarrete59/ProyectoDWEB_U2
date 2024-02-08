@@ -2,6 +2,8 @@ package com.concesionaria.modelo;
 
 import jakarta.persistence.*;
 
+import java.util.List;
+
 @Entity
 @Table(name = "ventas")
 public class ventas {
@@ -24,12 +26,14 @@ public class ventas {
     @Column
     private String metodoPago;
     @ManyToOne
-    @JoinColumn(name = "cliente_id", referencedColumnName = "idCliente")
+    @JoinColumn(name = "cliente_id", referencedColumnName = "idCliente", insertable = false, updatable = false)
     private clientes cliente;
 
     @ManyToOne
-    @JoinColumn(name = "auto_id", referencedColumnName = "idAuto")
+    @JoinColumn(name = "auto_id", referencedColumnName = "idAuto", insertable = false, updatable = false)
     private autos auto;
+    @OneToMany(mappedBy = "venta", cascade = CascadeType.ALL)
+    private List<autos> autosList;
 
     public ventas() {
     }
@@ -112,6 +116,14 @@ public class ventas {
 
     public void setAuto(autos auto) {
         this.auto = auto;
+    }
+
+    public List<autos> getAutosList() {
+        return autosList;
+    }
+
+    public void setAutosList(List<autos> autosList) {
+        this.autosList = autosList;
     }
 
     @Override

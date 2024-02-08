@@ -2,6 +2,8 @@ package com.concesionaria.dao;
 
 import com.concesionaria.idao.IVentasDao;
 import com.concesionaria.modelo.JPAUtil;
+import com.concesionaria.modelo.autos;
+import com.concesionaria.modelo.clientes;
 import com.concesionaria.modelo.ventas;
 import jakarta.persistence.EntityManager;
 
@@ -44,5 +46,26 @@ public class VentasImpl implements IVentasDao {
         ventas venta;
         venta = entityManager.find(ventas.class, id);
         return venta;
+    }
+
+    @Override
+    public List<autos> obtenerAutos() {
+        List<autos> listaAutos;
+        listaAutos = entityManager.createQuery("SELECT a FROM autos a").getResultList();
+        return listaAutos;
+    }
+
+    @Override
+    public List<clientes> obtenerClientes() {
+        List<clientes> listaClientes;
+        listaClientes = entityManager.createQuery("SELECT c FROM clientes c").getResultList();
+        return listaClientes;
+    }
+
+    @Override
+    public List<empleados> obtenerEmpleados() {
+        List<empleados> listaEmpleados;
+        listaEmpleados = entityManager.createQuery("SELECT e FROM empleados e").getResultList();
+        return listaEmpleados;
     }
 }

@@ -14,9 +14,13 @@ public class detalleVenta {
     @Column
     private int idAuto;
     @Column
-    private int cantidad;
+    private double cantidad;
     @Column
-    private float precioVenta;
+    private double precioVenta;
+    @ManyToOne
+    private autos auto;
+    @ManyToOne
+    private ventas venta;
     @Column
     private String detalle;
 
@@ -51,8 +55,9 @@ public class detalleVenta {
         return cantidad;
     }
 
-    public void setCantidad(int cantidad) {
+    public void setCantidad(double cantidad) {
         this.cantidad = cantidad;
+        venta.actualizarValores();
     }
 
     public float getPrecioVenta() {
