@@ -29,11 +29,11 @@ public class ventas {
     @JoinColumn(name = "cliente_id", referencedColumnName = "idCliente", insertable = false, updatable = false)
     private clientes cliente;
 
-    @ManyToOne
+    /*@ManyToOne
     @JoinColumn(name = "auto_id", referencedColumnName = "idAuto", insertable = false, updatable = false)
     private autos auto;
     @OneToMany(mappedBy = "venta", cascade = CascadeType.ALL)
-    private List<autos> autosList;
+    private List<autos> autosList;*/
 
     public ventas() {
     }
@@ -110,7 +110,7 @@ public class ventas {
         this.cliente = cliente;
     }
 
-    public autos getAuto() {
+    /*public autos getAuto() {
         return auto;
     }
 
@@ -124,7 +124,7 @@ public class ventas {
 
     public void setAutosList(List<autos> autosList) {
         this.autosList = autosList;
-    }
+    }*/
 
     @Override
     public String toString() {

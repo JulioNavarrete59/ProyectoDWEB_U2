@@ -49,4 +49,9 @@ public class ClientesController {
         sessionMap.put("cliente", oCliente);
         return "/clientes/crear.xhtml";
     }
+
+    public String registrarCliente(clientes clientes){
+        clientesDao.registrar(clientes);
+        return "/index.xhtml";
+    }
 }

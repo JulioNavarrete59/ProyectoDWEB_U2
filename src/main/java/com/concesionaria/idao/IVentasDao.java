@@ -17,5 +17,5 @@ public interface IVentasDao {
 
     List<clientes> obtenerClientes();
 
-    List<empleados> obtenerEmpleados();
+    //List<empleados> obtenerEmpleados();
 }

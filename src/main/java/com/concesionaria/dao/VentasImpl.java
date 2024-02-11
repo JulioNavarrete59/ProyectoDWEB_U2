@@ -62,10 +62,10 @@ public class VentasImpl implements IVentasDao {
         return listaClientes;
     }
 
-    @Override
+    /*@Override
     public List<empleados> obtenerEmpleados() {
         List<empleados> listaEmpleados;
         listaEmpleados = entityManager.createQuery("SELECT e FROM empleados e").getResultList();
         return listaEmpleados;
-    }
+    }*/
 }

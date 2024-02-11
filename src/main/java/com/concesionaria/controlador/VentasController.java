@@ -20,7 +20,7 @@ import java.util.List;
 @Named(value = "ventaBean")
 public class VentasController {
 
-    private IVentasDao ventasDao = new VentasImpl();
+    /*private IVentasDao ventasDao = new VentasImpl();
     private IAutosDao autosDao = new AutosImpl();
     private List<autos> autosList;
     private List<clientes> clientesList;
@@ -180,5 +180,5 @@ public class VentasController {
 
     public float getTotalPagar() {
         return totalPagar;
-    }
+    }*/
 }

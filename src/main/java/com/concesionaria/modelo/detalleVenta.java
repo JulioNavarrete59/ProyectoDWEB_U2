@@ -51,20 +51,20 @@ public class detalleVenta {
         this.idAuto = idAuto;
     }
 
-    public int getCantidad() {
+    public double getCantidad() {
         return cantidad;
     }
 
-    public void setCantidad(double cantidad) {
+    /*public void setCantidad(double cantidad) {
         this.cantidad = cantidad;
         venta.actualizarValores();
-    }
+    }*/
 
-    public float getPrecioVenta() {
+    public double getPrecioVenta() {
         return precioVenta;
     }
 
-    public void setPrecioVenta(float precioVenta) {
+    public void setPrecioVenta(double precioVenta) {
         this.precioVenta = precioVenta;
     }
 
