@@ -44,30 +44,30 @@
             <h:form>
                 <div class="form-group">
                     <label for="nombre">Nombre</label>
-                    <h:inputText id="nombre" class="form-control" value="#{clientes.nombre}" required="true"/>
+                    <h:inputText id="nombre" class="form-control" value="#{clientesBean.cliente.nombre}" required="true"/>
                 </div>
                 <div class="form-group">
                     <label for="apellido">Apellido</label>
-                    <h:inputText id="apellido" class="form-control" value="#{clientes.apellido}" required="true"/>
+                    <h:inputText id="apellido" class="form-control" value="#{clientesBean.cliente.apellido}" required="true"/>
                 </div>
                 <div class="form-group">
-                    <label for="cedula">DUI</label>
-                    <h:inputText id="cedula" class="form-control" value="#{clientes.cedula}" required="true"/>
+                    <label for="cedula">Cedula</label>
+                    <h:inputText id="cedula" class="form-control" value="#{clientesBean.cliente.cedula}" required="true"/>
                 </div>
                 <div class="form-group">
                     <label for="telefono">Telefono</label>
-                    <h:inputText id="telefono" class="form-control" value="#{clientes.telefono}" required="true"/>
+                    <h:inputText id="telefono" class="form-control" value="#{clientesBean.cliente.telefono}" required="true"/>
                 </div>
                 <div class="form-group">
                     <label for="direccion">Direccion</label>
-                    <h:inputText id="direccion" class="form-control" value="#{clientes.direccion}" required="true"/>
+                    <h:inputText id="direccion" class="form-control" value="#{clientesBean.cliente.direccion}" required="true"/>
                 </div>
                 <div class="form-group">
                     <label for="email">Email</label>
-                    <h:inputText id="email" class="form-control" value="#{clientes.email}" required="true"/>
+                    <h:inputText id="email" class="form-control" value="#{clientesBean.cliente.correo}" required="true"/>
                 </div>
 
-                <h:commandButton value="Guardar" class="btn btn-primary" action="#{clientesBean.registrarCliente(clientes)}"/>
+                <h:commandButton value="Guardar" class="btn btn-primary" action="#{clientesBean.registrarCliente()}"/>
             </h:form>
         </div>
     </h:body>

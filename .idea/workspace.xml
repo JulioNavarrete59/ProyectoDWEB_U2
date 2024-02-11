@@ -10,20 +10,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e5b683c8-97fc-42cb-ab98-be40088d47a8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/styles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/concesionaria/controlador/ClientesController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/concesionaria/controlador/ClientesController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/concesionaria/controlador/VentasController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/concesionaria/controlador/VentasController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/concesionaria/dao/VentasImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/concesionaria/dao/VentasImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/concesionaria/idao/IVentasDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/concesionaria/idao/IVentasDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/concesionaria/modelo/autos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/concesionaria/modelo/autos.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/concesionaria/modelo/detalleVenta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/concesionaria/modelo/detalleVenta.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/concesionaria/modelo/ventas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/concesionaria/modelo/ventas.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/autos/crear.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/autos/crear.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/autos/index.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/autos/index.xhtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/clientes/crear.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/clientes/crear.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/clientes/index.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/clientes/index.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.xhtml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,6 +51,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/julio/IdeaProjects/Laboratorio3JPA",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -151,7 +141,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1707687016219</updated>
-      <workItem from="1707687018394" duration="3401000" />
+      <workItem from="1707687018394" duration="5798000" />
     </task>
     <servers />
   </component>

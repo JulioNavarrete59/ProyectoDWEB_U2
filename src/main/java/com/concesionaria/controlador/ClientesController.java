@@ -19,6 +19,7 @@ import java.util.Map;
 @Named(value = "clientesBean")
 public class ClientesController {
     IClientesDao clientesDao = new ClientesImpl();
+    private clientes cliente = new clientes();
     public List<clientes> obtenerCliente(){
         return clientesDao.obtenerClientes();
     }
@@ -42,16 +43,24 @@ public class ClientesController {
         clientesDao.registrar(clientes);
         return "/index.xhtml";
     }
-    public String nuevo(){
+    /*public String nuevo(){
         clientes oCliente = new clientes();
         Map<String, Object> sessionMap = FacesContext.getCurrentInstance().getExternalContext().getSessionMap();
         //Añadir el objeto usuario a la colección
         sessionMap.put("cliente", oCliente);
         return "/clientes/crear.xhtml";
+    }*/
+
+    public String registrarCliente( ){
+        clientesDao.registrar(cliente);
+        return "/clientes/index.xhtml";
     }
 
-    public String registrarCliente(clientes clientes){
-        clientesDao.registrar(clientes);
-        return "/index.xhtml";
+    public clientes getCliente() {
+        return cliente;
+    }
+
+    public void setCliente(clientes cliente) {
+        this.cliente = cliente;
     }
 }
