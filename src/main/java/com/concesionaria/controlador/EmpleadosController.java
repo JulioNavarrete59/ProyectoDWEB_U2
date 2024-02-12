@@ -25,7 +25,7 @@ public class EmpleadosController {
         System.out.println(oEmpleados);
         Map<String, Object> sessionMap = FacesContext.getCurrentInstance().getExternalContext().getSessionMap();
         sessionMap.put("empleado", oEmpleados);
-        return "/editar.xhtml";
+        return "../empleados/editar.xhtml";
     }
     public String actualizar(empleados empleado) {
         empleadosDao.modificar(empleado);

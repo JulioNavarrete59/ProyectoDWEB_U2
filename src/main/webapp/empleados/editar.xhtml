@@ -7,7 +7,7 @@
       xmlns:f="http://xmlns.jcp.org/jsf/core">
 <f:view>
     <h:head>
-        <title>Agregar Empleado</title>
+        <title>Editar Empleado</title>
         <h:outputStylesheet library="webjars" name="bootstrap/5.3.0/css/bootstrap.min.css"/>
         <h:outputScript name="webjars/bootstrap/5.3.0/js/bootstrap.bundle.min.js" />
     </h:head>
@@ -48,6 +48,25 @@
         </div>
     </nav>
     </h:body>
+    <h:form>
+        <h:panelGrid columns="2" cellspacing="20" border="1" styleClass="p-4 border rounded">
+            <h:outputLabel value="ID" styleClass="form-label"/>
+            <h:inputText value="#{empleadosBean.empleado.idEmpleado}" readonly="true" disabled="true" styleClass="form-control"/>
+            <h:outputLabel value="Nombre" styleClass="form-label"/>
+            <h:inputText value="#{empleadosBean.empleado.nombre}" styleClass="form-control"/>
+            <h:outputLabel value="Apellido" styleClass="form-label"/>
+            <h:inputText value="#{empleadosBean.empleado.apellido}" styleClass="form-control"/>
+            <h:outputLabel value="Cedula" styleClass="form-label"/>
+            <h:inputText value="#{empleadosBean.empleado.cedula}" styleClass="form-control"/>
+            <h:outputLabel value="Telefono" styleClass="form-label"/>
+            <h:inputText value="#{empleadosBean.empleado.telefono}" styleClass="form-control"/>
+            <h:outputLabel value="Fecha de contratación" styleClass="form-label"/>
+            <h:inputText value="#{empleadosBean.empleado.fecha_contratacion}" styleClass="form-control"/>
+            <h:outputLabel value="Salario" styleClass="form-label"/>
+            <h:inputText value="#{empleadosBean.empleado.salario}" styleClass="form-control"/>
+            <h:commandButton value="Guardar" action="#{empleadosBean.actualizar(empleado)}" />
+        </h:panelGrid>
+    </h:form>
 
 </f:view>
 </html>
