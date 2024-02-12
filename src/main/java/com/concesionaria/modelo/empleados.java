@@ -24,16 +24,6 @@ public class empleados {
     public empleados() {
     }
 
-    public empleados(int idEmpleado, String nombre, String apellido, String cedula, String telefono, String fecha_contratacion, String salario) {
-        this.idEmpleado = idEmpleado;
-        this.nombre = nombre;
-        this.apellido = apellido;
-        this.cedula = cedula;
-        this.telefono = telefono;
-        this.fecha_contratacion = fecha_contratacion;
-        this.salario = salario;
-    }
-
     public int getIdEmpleado() {
         return idEmpleado;
     }

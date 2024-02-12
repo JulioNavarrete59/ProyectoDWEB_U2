@@ -7,7 +7,6 @@ import com.concesionaria.modelo.empleados;
 import jakarta.enterprise.context.RequestScoped;
 import jakarta.faces.context.FacesContext;
 import jakarta.inject.Named;
-
 import java.util.List;
 import java.util.Map;
 
@@ -17,7 +16,7 @@ public class EmpleadosController {
 
     IEmpleadosDao empleadosDao = new EmpleadosImpl();
     private empleados empleado = new empleados();
-    List<empleados> obtenerEmpleados() {
+    public List<empleados> obtenerEmpleado() {
         return empleadosDao.obtenerEmpleados();
     }
     public String editar(int id) {
@@ -26,17 +25,22 @@ public class EmpleadosController {
         System.out.println(oEmpleados);
         Map<String, Object> sessionMap = FacesContext.getCurrentInstance().getExternalContext().getSessionMap();
         sessionMap.put("empleado", oEmpleados);
-        return "/editar.xhtml";
+        return "/empleados/editar.xhtml";
     }
     public String actualizar(empleados empleado) {
         empleadosDao.modificar(empleado);
-        return "/index.xhtml";
+        return "/empleados/index.xhtml";
     }
     public void eliminar(int id) {
         empleadosDao.eliminar(id);
         System.out.println("Empleado eliminado");
     }
     public String registrar(empleados empleado) {
+        empleadosDao.registrar(empleado);
+        return "/empleados/index.xhtml";
+    }
+
+    public String registrarEmpleado() {
         empleadosDao.registrar(empleado);
         return "/empleados/index.xhtml";
     }

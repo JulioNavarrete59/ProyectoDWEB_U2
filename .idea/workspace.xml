@@ -12,6 +12,8 @@
     <list default="true" id="e5b683c8-97fc-42cb-ab98-be40088d47a8" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/src/main/java/com/concesionaria/modelo/ventas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/concesionaria/modelo/ventas.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/concesionaria/controlador/EmpleadosController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/concesionaria/controlador/EmpleadosController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/empleados/index.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/empleados/index.xhtml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,6 +41,9 @@
     <option name="FILTER_INFO" value="true" />
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
@@ -173,7 +178,7 @@
       <updated>1707687016219</updated>
       <workItem from="1707687018394" duration="8085000" />
       <workItem from="1707749959668" duration="2316000" />
-      <workItem from="1707763244377" duration="3380000" />
+      <workItem from="1707763244377" duration="11911000" />
     </task>
     <servers />
   </component>
