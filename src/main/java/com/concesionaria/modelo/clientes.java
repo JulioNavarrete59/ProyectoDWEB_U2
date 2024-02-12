@@ -26,9 +26,6 @@ public class clientes {
 
     private String correo;
 
-    @OneToMany(mappedBy = "cliente", cascade = CascadeType.ALL, orphanRemoval = true)
-    private List<ventas> ventasList;
-
     //Constructor vacío
     public clientes() {
     }
@@ -103,13 +100,6 @@ public class clientes {
         this.correo = correo;
     }
 
-    public List<ventas> getVentasList() {
-        return ventasList;
-    }
-
-    public void setVentasList(List<ventas> ventasList) {
-        this.ventasList = ventasList;
-    }
     //toString
 
     @Override

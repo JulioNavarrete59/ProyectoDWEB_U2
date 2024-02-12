@@ -25,15 +25,15 @@ public class ventas {
     private float total = 0;
     @Column
     private String metodoPago;
-    @ManyToOne
-    @JoinColumn(name = "cliente_id", referencedColumnName = "idCliente", insertable = false, updatable = false)
-    private clientes cliente;
 
     /*@ManyToOne
-    @JoinColumn(name = "auto_id", referencedColumnName = "idAuto", insertable = false, updatable = false)
-    private autos auto;
-    @OneToMany(mappedBy = "venta", cascade = CascadeType.ALL)
-    private List<autos> autosList;*/
+    private empleados empleado;
+
+    @OneToMany
+    private List<detalleVenta> detalleVenta;*/
+
+    @ManyToOne
+    private clientes cliente;
 
     public ventas() {
     }
@@ -110,21 +110,13 @@ public class ventas {
         this.cliente = cliente;
     }
 
-    /*public autos getAuto() {
-        return auto;
+    public clientes getClientes() {
+        return cliente;
     }
 
-    public void setAuto(autos auto) {
-        this.auto = auto;
+    public void setClientes(clientes cliente) {
+        this.cliente = cliente;
     }
-
-    public List<autos> getAutosList() {
-        return autosList;
-    }
-
-    public void setAutosList(List<autos> autosList) {
-        this.autosList = autosList;
-    }*/
 
     @Override
     public String toString() {

@@ -76,6 +76,22 @@ public class detalleVenta {
         this.detalle = detalle;
     }
 
+    public autos getAuto() {
+        return auto;
+    }
+
+    public void setAuto(autos auto) {
+        this.auto = auto;
+    }
+
+    public ventas getVenta() {
+        return venta;
+    }
+
+    public void setVenta(ventas venta) {
+        this.venta = venta;
+    }
+
     @Override
     public String toString() {
         return "detalleVenta{" +
