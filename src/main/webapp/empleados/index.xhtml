@@ -6,6 +6,87 @@
       xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
       xmlns:f="http://xmlns.jcp.org/jsf/core">
 <f:view>
+    <h:head>
+        <title>Empleados</title>
+        <h:outputStylesheet library="webjars" name="bootstrap/5.3.0/css/bootstrap.min.css"/>
+        <h:outputScript name="webjars/bootstrap/5.3.0/js/bootstrap.bundle.min.js" />
+    </h:head>
+    <h:body>
+        <!-- Navigation -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item"><a class="nav-link text-white" href="../index.xhtml">Inicio</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Autos
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="../autos/index.xhtml">Lista de autos</a></li>
+                            <li><a class="dropdown-item" href="../autos/crear.xhtml">Agregar autos</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Clientes
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Lista de clientes</a></li>
+                            <li><a class="dropdown-item" href="crear.xhtml">Agregar clientes</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Empleados
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="../empleados/index.xhtml">Lista de empleados</a></li>
+                            <li><a class="dropdown-item" href="../empleados/crear.xhtml">Agregar empleados</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </h:body>
+
+    <h:form>
+        <h:dataTable value="#{empleadosBean.obtenerEmpleado()}"
+                     var = "empleado" border="1">
+            <h:column>
+                <f:facet name="header">ID</f:facet>
+                <h:outputText value="#{empleado.idEmpleado}" />
+            </h:column>
+            <h:column>
+                <f:facet name="header">Nombre</f:facet>
+                <h:outputText value="#{empleado.nombre}" />
+            </h:column>
+            <h:column>
+                <f:facet name="header">Apellido</f:facet>
+                <h:outputText value="#{empleado.apellido}" />
+            </h:column>
+            <h:column>
+                <f:facet name="header">Cédula</f:facet>
+                <h:outputText value="#{empleado.cedula}" />
+            </h:column>
+            <h:column>
+                <f:facet name="header">Teléfono</f:facet>
+                <h:outputText value="#{empleado.telefono}" />
+            </h:column>
+            <h:column>
+                <f:facet name="header">Fecha de contratación</f:facet>
+                <h:outputText value="#{empleado.fecha_contratacion}" />
+            </h:column>
+            <h:column>
+                <f:facet name="header">Salario</f:facet>
+                <h:outputText value="#{empleado.salario}" />
+            </h:column>
+            <h:column>
+                <f:facet name="header">Acciones</f:facet>
+                <h:commandButton value="Editar" action="#{empleadosBean.editar(empleado.idEmpleado)}"/>
+                <h:commandButton value="Eliminar" action="#{empleadosBean.eliminar(empleado.idEmpleado)}"/>
+            </h:column>
+        </h:dataTable>
+    </h:form>
 
 </f:view>
 </html>
