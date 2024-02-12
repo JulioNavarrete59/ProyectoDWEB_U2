@@ -31,8 +31,8 @@
                             Clientes
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Lista de clientes</a></li>
-                            <li><a class="dropdown-item" href="crear.xhtml">Agregar clientes</a></li>
+                            <li><a class="dropdown-item" href="../clientes/index.xhtml">Lista de clientes</a></li>
+                            <li><a class="dropdown-item" href="../clientes/crear.xhtml">Agregar clientes</a></li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
@@ -49,9 +49,11 @@
         </nav>
     </h:body>
 
+    <h1>Lista de Empleados</h1>
+    <br/>
     <h:form>
         <h:dataTable value="#{empleadosBean.obtenerEmpleado()}"
-                     var = "empleado" border="1">
+                     var = "empleado" border="1" styleClass="table table-light">
             <h:column>
                 <f:facet name="header">ID</f:facet>
                 <h:outputText value="#{empleado.idEmpleado}" />
@@ -82,8 +84,8 @@
             </h:column>
             <h:column>
                 <f:facet name="header">Acciones</f:facet>
-                <h:commandButton value="Editar" action="#{empleadosBean.editar(empleado.idEmpleado)}"/>
-                <h:commandButton value="Eliminar" action="#{empleadosBean.eliminar(empleado.idEmpleado)}"/>
+                <h:commandButton value="Editar" action="#{empleadosBean.editar(empleado.idEmpleado)}" styleClass="btn-warning" />
+                <h:commandButton value="Eliminar" action="#{empleadosBean.eliminar(empleado.idEmpleado)}" styleClass="btn-danger" />
             </h:column>
         </h:dataTable>
     </h:form>

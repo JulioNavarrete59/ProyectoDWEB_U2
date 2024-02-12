@@ -31,8 +31,8 @@
                             Clientes
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Lista de clientes</a></li>
-                            <li><a class="dropdown-item" href="crear.xhtml">Agregar clientes</a></li>
+                            <li><a class="dropdown-item" href="../clientes/index.xhtml">Lista de clientes</a></li>
+                            <li><a class="dropdown-item" href="../clientes/crear.xhtml">Agregar clientes</a></li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
@@ -75,6 +75,7 @@
                     <label for="salario">Salario</label>
                     <h:inputText id="salario" class="form-control" value="#{empleadosBean.empleado.salario}" required="true"/>
                 </div>
+                <br></br>
 
                 <h:commandButton value="Guardar" class="btn btn-primary" action="#{empleadosBean.registrarEmpleado()}"/>
             </h:form>
