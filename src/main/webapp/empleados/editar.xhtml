@@ -51,19 +51,19 @@
     <h:form>
         <h:panelGrid columns="2" cellspacing="20" border="1" styleClass="p-4 border rounded">
             <h:outputLabel value="ID" styleClass="form-label"/>
-            <h:inputText value="#{empleadosBean.empleado.idEmpleado}" readonly="true" disabled="true" styleClass="form-control"/>
+            <h:inputText value="#{empleado.idEmpleado}" readonly="true" disabled="true" styleClass="form-control"/>
             <h:outputLabel value="Nombre" styleClass="form-label"/>
-            <h:inputText value="#{empleadosBean.empleado.nombre}" styleClass="form-control"/>
+            <h:inputText value="#{empleado.nombre}" styleClass="form-control"/>
             <h:outputLabel value="Apellido" styleClass="form-label"/>
-            <h:inputText value="#{empleadosBean.empleado.apellido}" styleClass="form-control"/>
+            <h:inputText value="#{empleado.apellido}" styleClass="form-control"/>
             <h:outputLabel value="Cedula" styleClass="form-label"/>
-            <h:inputText value="#{empleadosBean.empleado.cedula}" styleClass="form-control"/>
+            <h:inputText value="#{empleado.cedula}" styleClass="form-control"/>
             <h:outputLabel value="Telefono" styleClass="form-label"/>
-            <h:inputText value="#{empleadosBean.empleado.telefono}" styleClass="form-control"/>
+            <h:inputText value="#{empleado.telefono}" styleClass="form-control"/>
             <h:outputLabel value="Fecha de contratación" styleClass="form-label"/>
-            <h:inputText value="#{empleadosBean.empleado.fecha_contratacion}" styleClass="form-control"/>
+            <h:inputText value="#{empleado.fecha_contratacion}" styleClass="form-control"/>
             <h:outputLabel value="Salario" styleClass="form-label"/>
-            <h:inputText value="#{empleadosBean.empleado.salario}" styleClass="form-control"/>
+            <h:inputText value="#{empleado.salario}" styleClass="form-control"/>
             <h:commandButton value="Guardar" action="#{empleadosBean.actualizar(empleado)}" />
         </h:panelGrid>
     </h:form>
