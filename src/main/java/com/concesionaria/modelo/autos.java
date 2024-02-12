@@ -21,8 +21,9 @@ public class autos {
     private String anio;
     @Column
     private String precio;
+    @Lob
     @Column
-    private String foto;
+    private byte[] foto;
     /*@OneToMany(mappedBy = "auto", cascade = CascadeType.ALL, orphanRemoval = true)
     private List<ventas> ventasList;*/
 
@@ -68,11 +69,11 @@ public class autos {
         this.precio = precio;
     }
 
-    public String getFoto() {
+    public byte[] getFoto() {
         return foto;
     }
 
-    public void setFoto(String foto) {
+    public void setFoto(byte[] foto) {
         this.foto = foto;
     }
 

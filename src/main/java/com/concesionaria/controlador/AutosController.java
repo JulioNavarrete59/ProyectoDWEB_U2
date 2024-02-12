@@ -19,6 +19,7 @@ import java.util.Objects;
 @Named(value = "autosBean")
 public class AutosController {
     IAutosDao autosDao = new AutosImpl();
+    autos auto = new autos();
     public List<autos> obtenerAuto(){
         return autosDao.obtenerAutos();
     }
@@ -38,8 +39,8 @@ public class AutosController {
     public void eliminar (int id){
         autosDao.eliminar(id);
     }
-    public String registrar(autos autos){
-        autosDao.registrar(autos);
+    public String registrar(){
+        autosDao.registrar(auto);
         return "/index.xhtml";
     }
     public String nuevo(){
@@ -49,4 +50,13 @@ public class AutosController {
         sessionMap.put("auto", oAuto);
         return "/autos/crear.xhtml";
     }
+
+    public autos getAuto() {
+        return auto;
+    }
+    public void setAuto(autos auto) {
+        this.auto = auto;
+    }
+
+
 }
