@@ -23,4 +23,11 @@
         <!-- Mapeo de URL -->
         <url-pattern>*.xhtml</url-pattern>
     </servlet-mapping>
+
+    <!-- Mapeo de recursos -->
+    <servlet-mapping>
+        <servlet-name>Faces Servlet</servlet-name>
+        <url-pattern>/faces/*</url-pattern>
+    </servlet-mapping>
+
 </web-app>

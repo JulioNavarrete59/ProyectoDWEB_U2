@@ -11,10 +11,16 @@
   <component name="ChangeListManager">
     <list default="true" id="e5b683c8-97fc-42cb-ab98-be40088d47a8" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/src/main/java/com/concesionaria/controlador/ClientesController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/concesionaria/controlador/ClientesController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/concesionaria/modelo/clientes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/concesionaria/modelo/clientes.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/clientes/editar.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/clientes/editar.xhtml" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/autos/editar.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/autos/editar.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/empleados/editar.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/empleados/editar.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/ventas/index.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/ventas/index.xhtml" afterDir="false" />
+>>>>>>> f2225e3cedb8a61a41adf0fbe5ed79420090a068
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -180,8 +186,12 @@
       <workItem from="1707687018394" duration="8085000" />
       <workItem from="1707749959668" duration="2316000" />
       <workItem from="1707763244377" duration="11911000" />
+<<<<<<< HEAD
       <workItem from="1707839958502" duration="10453000" />
       <workItem from="1707852359143" duration="3812000" />
+=======
+      <workItem from="1707839958502" duration="19501000" />
+>>>>>>> f2225e3cedb8a61a41adf0fbe5ed79420090a068
     </task>
     <servers />
   </component>

@@ -31,4 +31,10 @@ public class UsuarioDao {
         }
     }
 
+    public void actualizar(usuario usuario) {
+        entityManager.getTransaction().begin();
+        entityManager.merge(usuario);
+        entityManager.getTransaction().commit();
+    }
+
 }
