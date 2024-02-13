@@ -2,6 +2,7 @@ package com.concesionaria.idao;
 
 import com.concesionaria.modelo.autos;
 import com.concesionaria.modelo.clientes;
+import com.concesionaria.modelo.empleados;
 import com.concesionaria.modelo.ventas;
 
 import java.util.List;
@@ -17,5 +18,5 @@ public interface IVentasDao {
 
     List<clientes> obtenerClientes();
 
-    //List<empleados> obtenerEmpleados();
+    List<empleados> obtenerEmpleados();
 }

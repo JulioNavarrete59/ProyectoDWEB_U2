@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+<f:view>
+    <h:head>
+        <title>Agregar una venta</title>
+        <h:outputStylesheet library="webjars" name="bootstrap/5.3.0/css/bootstrap.min.css"/>
+        <h:outputScript name="webjars/bootstrap/5.3.0/js/bootstrap.bundle.min.js" />
+    </h:head>
+    <h:body>
+        <!-- Navigation -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item"><a class="nav-link text-white" href="../index.xhtml">Inicio</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Autos
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="../autos/index.xhtml">Lista de autos</a></li>
+                            <li><a class="dropdown-item" href="../autos/crear.xhtml">Agregar autos</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Clientes
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="../clientes/index.xhtml">Lista de clientes</a></li>
+                            <li><a class="dropdown-item" href="../clientes/crear.xhtml">Agregar clientes</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Empleados
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Lista de empleados</a></li>
+                            <li><a class="dropdown-item" href="crear.xhtml">Agregar empleados</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Ventas
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="index.xhtml">Lista de ventas</a></li>
+                            <li><a class="dropdown-item" href="#">Agregar ventas</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </h:body>
+
+    <h:form>
+        <h:panelGrid columns="2" styleClass="container">
+            <h:outputLabel for="cliente_id" value="Cliente" styleClass="form-label" />
+            <h:selectOneMenu id="cliente_id" value="#{ventasBean.cliente}" required="true" styleClass="form-select">
+                <f:selectItems value="#{clientesBean.obtenerCliente()}" var="cliente" itemValue="#{cliente.idCliente}" itemLabel="#{cliente.nombre} #{cliente.apellido}" />
+            </h:selectOneMenu>
+
+            <h:outputLabel for="empleado_id" value="Empleado" styleClass="form-label" />
+            <h:selectOneMenu id="empleado_id" value="#{ventasBean.empleado}" required="true" styleClass="form-select">
+                <f:selectItems value="#{empleadosBean.obtenerEmpleado()}" var="empleado" itemValue="#{empleado.idEmpleado}" itemLabel="#{empleado.nombre} #{empleado.apellido}" />
+            </h:selectOneMenu>
+
+            <h:outputLabel for="fecha_venta" value="Fecha Venta" styleClass="form-label" />
+            <h:inputText id="fecha_venta" value="#{ventasBean.venta.fechaVenta}" required="true" styleClass="form-control">
+                <f:convertDateTime pattern="yyyy-MM-dd" />
+            </h:inputText>
+
+            <h:outputLabel for="metodo_pago" value="Método de pago" styleClass="form-label" />
+            <h:selectOneMenu id="metodo_pago" value="#{ventasBean.venta.metodoPago}" required="true" styleClass="form-select">
+                <f:selectItem itemValue="Efectivo" itemLabel="Efectivo" />
+                <f:selectItem itemValue="Tarjeta" itemLabel="Tarjeta" />
+            </h:selectOneMenu>
+        </h:panelGrid>
+
+
+        <h:commandButton value="Agregar" action="#{ventasBean.addCar}" styleClass="btn btn-primary" />
+
+        <h:dataTable value="#{ventasBean.cars}" var="car" styleClass="table table-striped">
+            <h:column>
+                <f:facet name="header">Auto</f:facet>
+                <h:selectOneMenu value="#{car.auto}" styleClass="form-select">
+                    <f:selectItems value="#{autosBean.obtenerAuto()}" var="auto" itemValue="#{auto.idAuto}" itemLabel="#{auto.marca} #{auto.modelo} #{auto.anio}" />
+                </h:selectOneMenu>
+            </h:column>
+            <h:column>
+                <f:facet name="header">Cantidad</f:facet>
+                <h:inputText value="#{ventasBean.detalle.cantidad}" required="true" styleClass="form-control">
+                    <f:convertNumber minIntegerDigits="1" maxIntegerDigits="10" />
+                </h:inputText>
+            </h:column>
+            <h:column>
+                <f:facet name="header">Precio Unitario</f:facet>
+                <h:outputText value="#{ventasBean.detalle.precioVenta}" />
+            </h:column>
+            <h:column>
+                <f:facet name="header">Subtotal</f:facet>
+                <h:outputText value="#{ventasBean.venta.subtotal}" />
+            </h:column>
+            <h:column>
+                <f:facet name="header">Acciones</f:facet>
+                <!-- Aquí puedes agregar los botones de acciones -->
+            </h:column>
+        </h:dataTable>
+
+
+        <h:outputLabel for="total" value="Total" styleClass="form-label" />
+        <h:outputText id="total" value="#{ventasBean.total}" styleClass="form-control" />
+
+        <h:outputLabel for="ice" value="ICE" styleClass="form-label" />
+        <h:outputText id="ice" value="#{ventasBean.ice}" styleClass="form-control"/>
+
+        <h:outputLabel for="totalPagar" value="Total Pagar" styleClass="form-label" />
+        <h:outputText id="totalPagar" value="#{ventasBean.totalPagar}" styleClass="form-control" />
+
+        <!-- Guardar la venta -->
+        <h:commandButton value="Guardar" style="align-items: center" styleClass="btn btn-primary" />
+    </h:form>
+
+</f:view>
+</html>

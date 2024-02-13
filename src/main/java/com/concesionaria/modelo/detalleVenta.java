@@ -10,19 +10,15 @@ public class detalleVenta {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int idDetalleVenta;
     @Column
-    private int idVenta;
-    @Column
-    private int idAuto;
-    @Column
     private double cantidad;
     @Column
     private double precioVenta;
+    @Column
+    private String detalle;
     @ManyToOne
     private autos auto;
     @ManyToOne
     private ventas venta;
-    @Column
-    private String detalle;
 
     public detalleVenta() {
     }
@@ -35,30 +31,13 @@ public class detalleVenta {
         this.idDetalleVenta = idDetalleVenta;
     }
 
-    public int getIdVenta() {
-        return idVenta;
-    }
-
-    public void setIdVenta(int idVenta) {
-        this.idVenta = idVenta;
-    }
-
-    public int getIdAuto() {
-        return idAuto;
-    }
-
-    public void setIdAuto(int idAuto) {
-        this.idAuto = idAuto;
-    }
-
     public double getCantidad() {
         return cantidad;
     }
 
-    /*public void setCantidad(double cantidad) {
+    public void setCantidad(double cantidad) {
         this.cantidad = cantidad;
-        venta.actualizarValores();
-    }*/
+    }
 
     public double getPrecioVenta() {
         return precioVenta;
@@ -96,8 +75,6 @@ public class detalleVenta {
     public String toString() {
         return "detalleVenta{" +
                 "idDetalleVenta=" + idDetalleVenta +
-                ", idVenta=" + idVenta +
-                ", idAuto=" + idAuto +
                 ", cantidad=" + cantidad +
                 ", precioVenta=" + precioVenta +
                 ", detalle='" + detalle + '\'' +

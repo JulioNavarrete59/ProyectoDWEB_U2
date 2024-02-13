@@ -4,10 +4,7 @@ import com.concesionaria.dao.AutosImpl;
 import com.concesionaria.dao.VentasImpl;
 import com.concesionaria.idao.IAutosDao;
 import com.concesionaria.idao.IVentasDao;
-import com.concesionaria.modelo.autos;
-import com.concesionaria.modelo.clientes;
-import com.concesionaria.modelo.detalleVenta;
-import com.concesionaria.modelo.ventas;
+import com.concesionaria.modelo.*;
 import jakarta.enterprise.context.RequestScoped;
 import jakarta.faces.application.FacesMessage;
 import jakarta.faces.context.FacesContext;
@@ -17,10 +14,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 @RequestScoped
-@Named(value = "ventaBean")
+@Named(value = "ventasBean")
 public class VentasController {
 
-    /*private IVentasDao ventasDao = new VentasImpl();
+    private IVentasDao ventasDao = new VentasImpl();
     private IAutosDao autosDao = new AutosImpl();
     private List<autos> autosList;
     private List<clientes> clientesList;
@@ -35,6 +32,13 @@ public class VentasController {
     private float total = 0;
     private float ice = 0;
     private float totalPagar = 0;
+
+    private empleados empleado;
+    private clientes cliente;
+    private autos auto;
+    private ventas venta;
+
+    private detalleVenta detalle;
 
     public VentasController() {
         nuevaVenta = new ventas();
@@ -61,80 +65,7 @@ public class VentasController {
     public List<ventas> obtenerVentas() {
         return ventasDao.obtenerVentas();
     }
-    // Métodos para el manejo de autos en la venta
-    public void agregarAuto(int autoId) {
-        autos auto = autosDao.obtenerAutosPorId(autoId);
-        cars.add(auto);
-        updateValues();
-    }
 
-    public void cambiarAuto(int indice, int autoId) {
-        autos auto = autosDao.obtenerAutosPorId(autoId);
-        cars.set(indice, auto);
-        updateValues();
-    }
-
-    // Método para actualizar los valores de la venta
-    private void updateValues() {
-        actualizarValores();
-    }
-
-    public void cambiarCantidad(int indice, int cantidad) {
-        autos auto = cars.get(indice);
-        auto.setCantidad(cantidad);
-        updateValues();
-    }
-    public void actualizarValores() {
-        this.subtotal = 0;
-        this.ice = 0;
-        for (detalleVenta detalle : detalles) {
-            this.subtotal += detalle.calcularSubtotal();
-            this.ice += detalle.calcularIce();
-        }
-        this.total = this.subtotal + this.ice;
-    }
-
-    // Método para guardar la venta
-    public String guardarVenta() {
-        try {
-            if (!validarVenta()) {
-                FacesContext.getCurrentInstance().addMessage(null,
-                        new FacesMessage(FacesMessage.SEVERITY_ERROR, "Error de validación", "Todos los campos deben estar llenos y el total a pagar debe ser mayor que 0."));
-                return null;
-            }
-
-            // Configura la lista de autos en la venta antes de guardar
-            nuevaVenta.setAutosList(cars);
-
-            // Guarda la venta
-            ventasDao.registrar(nuevaVenta);
-
-            // Puedes agregar un mensaje de éxito o redirección si lo deseas
-            FacesContext.getCurrentInstance().addMessage(null,
-                    new FacesMessage(FacesMessage.SEVERITY_INFO, "Venta registrada con éxito.", null));
-
-            // Reinicia las variables para una nueva venta
-            nuevaVenta = new ventas();
-            cars = new ArrayList<>();
-            total = 0;
-            ice = 0;
-            totalPagar = 0;
-
-            // Actualiza la lista de ventas
-            ventasList = obtenerVentas();
-
-            return "indexVentas?faces-redirect=true"; // Puedes redirigir a la página que desees
-        } catch (Exception e) {
-            // Maneja la excepción según tus necesidades
-            FacesContext.getCurrentInstance().addMessage(null,
-                    new FacesMessage(FacesMessage.SEVERITY_ERROR, "Error al registrar la venta.", null));
-            return null;
-        }
-    }
-    private boolean validarVenta() {
-        return nuevaVenta.getCliente() != null && nuevaVenta.getEmpleado() != null && nuevaVenta.getFechaVenta() != null
-                && nuevaVenta.getMetodoPago() != null && totalPagar > 0;
-    }
 
     // Getters y setters
 
@@ -180,5 +111,67 @@ public class VentasController {
 
     public float getTotalPagar() {
         return totalPagar;
-    }*/
+    }
+
+    public empleados getEmpleado() {
+        return empleado;
+    }
+
+    public void setEmpleado(empleados empleado) {
+        this.empleado = empleado;
+    }
+
+    public clientes getCliente() {
+        return cliente;
+    }
+
+    public void setCliente(clientes cliente) {
+        this.cliente = cliente;
+    }
+
+    public autos getAuto() {
+        return auto;
+    }
+
+    public void setAuto(autos auto) {
+        this.auto = auto;
+    }
+
+    public ventas getVenta() {
+        return venta;
+    }
+
+    public void setVenta(ventas venta) {
+        this.venta = venta;
+    }
+
+    public detalleVenta getDetalle() {
+        return detalle;
+    }
+
+    public void setDetalle(detalleVenta detalle) {
+        this.detalle = detalle;
+    }
+
+    public void addCar() {
+        // Crear un nuevo detalle de venta
+        detalleVenta detalle = new detalleVenta();
+        ventas venta = new ventas();
+
+        // Establecer las propiedades del detalle
+        detalle.setAuto(this.auto);
+        detalle.setCantidad(this.detalle.getCantidad());
+        detalle.setPrecioVenta(this.detalle.getPrecioVenta());
+
+        // Calcular el subtotal
+        float subtotal = (float) (this.detalle.getCantidad() * this.detalle.getPrecioVenta());
+        venta.setSubtotal(subtotal);
+
+        // Agregar el detalle a la lista de detalles
+        this.cars.add(detalle.getAuto());
+
+        // Actualizar el total de la venta
+        this.venta.setSubtotal(this.venta.getSubtotal() + subtotal);
+    }
+
 }

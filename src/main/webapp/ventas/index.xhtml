@@ -7,8 +7,8 @@
       xmlns:f="http://xmlns.jcp.org/jsf/core">
 <f:view>
     <h:head>
-        <title>Autos</title>
-        <h:outputStylesheet name="webjars/bootstrap/5.3.0/css/bootstrap.min.css" />
+        <title>Lista de ventas</title>
+        <h:outputStylesheet library="webjars" name="bootstrap/5.3.0/css/bootstrap.min.css"/>
         <h:outputScript name="webjars/bootstrap/5.3.0/js/bootstrap.bundle.min.js" />
     </h:head>
     <h:body>
@@ -22,8 +22,8 @@
                             Autos
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Lista de autos</a></li>
-                            <li><a class="dropdown-item" href="crear.xhtml">Agregar autos</a></li>
+                            <li><a class="dropdown-item" href="../autos/index.xhtml">Lista de autos</a></li>
+                            <li><a class="dropdown-item" href="../autos/crear.xhtml">Agregar autos</a></li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
@@ -40,8 +40,8 @@
                             Empleados
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="../empleados/index.xhtml">Lista de empleados</a></li>
-                            <li><a class="dropdown-item" href="../empleados/crear.xhtml">Agregar empleados</a></li>
+                            <li><a class="dropdown-item" href="#">Lista de empleados</a></li>
+                            <li><a class="dropdown-item" href="crear.xhtml">Agregar empleados</a></li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
@@ -49,49 +49,50 @@
                             Ventas
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="../ventas/index.xhtml">Lista de ventas</a></li>
-                            <li><a class="dropdown-item" href="../ventas/crear.xhtml">Agregar ventas</a></li>
+                            <li><a class="dropdown-item" href="#">Lista de ventas</a></li>
+                            <li><a class="dropdown-item" href="crear.xhtml">Agregar ventas</a></li>
                         </ul>
                     </li>
                 </ul>
             </div>
         </nav>
-
     </h:body>
-    <h1 style="text-align: center">Lista de autos</h1>
-    <br/>
-    <h:form enctype="multipart/form-data">
-        <h:dataTable value="#{autosBean.obtenerAuto()}" var="auto" border="1" styleClass="table table-light">
-            <h:column>
-                <f:facet name="header">ID</f:facet>
-                <h:outputText value="#{auto.idAuto}" />
-            </h:column>
-            <h:column>
-                <f:facet name="header">Marca</f:facet>
-                <h:outputText value="#{auto.marca}" />
-            </h:column>
-            <h:column>
-                <f:facet name="header">Modelo</f:facet>
-                <h:outputText value="#{auto.modelo}" />
-            </h:column>
-            <h:column>
-                <f:facet name="header">Año</f:facet>
-                <h:outputText value="#{auto.anio}" />
-            </h:column>
-            <h:column>
-                <f:facet name="header">Precio</f:facet>
-                <h:outputText value="#{auto.precio}" />
-            </h:column>
-            <h:column>
-                <f:facet name="header">Foto</f:facet>
-                <h:graphicImage value="#{autosBean.auto.foto}" rendered="#{not empty autosBean.auto.foto}"/>
-            </h:column>
+    <h1 style="text-align: center">Lista de las Ventas</h1>
+    <!--Tabla para mostrar las ventas-->
+    <h:dataTable value="#{ventasBean.obtenerVentas()}" var="venta" styleClass="table table-light">
+        <h:column>
+            <f:facet name="header">ID</f:facet>
+            #{venta.id}
+        </h:column>
+        <h:column>
+            <f:facet name="header">Fecha</f:facet>
+            #{venta.fechaVenta}
+        </h:column>
+        <h:column>
+            <f:facet name="header">Cliente</f:facet>
+            #{venta.cliente}
+        </h:column>
+        <h:column>
+            <f:facet name="header">Auto</f:facet>
+            #{venta.auto}
+        </h:column>
+        <h:column>
+            <f:facet name="header">Empleado</f:facet>
+            #{venta.empleado}
+        </h:column>
+        <h:column>
+            <f:facet name="header">Total</f:facet>
+            #{venta.total}
+        </h:column>
+        <h:column>
+            <f:facet name="header">Método de pago</f:facet>
+            #{venta.metodoPago}
+        </h:column>
         <h:column>
             <f:facet name="header">Acciones</f:facet>
-            <h:commandButton value="Editar" action="#{autosBean.editar(auto.idAuto)}" styleClass="btn-warning"/>
-            <h:commandButton value="Eliminar" action="#{autosBean.eliminar(auto.idAuto)}" styleClass="btn-danger"/>
+            <h:commandButton value="Editar" styleClass="btn btn-warning"/>
+            <h:commandButton value="Eliminar" styleClass="btn btn-danger"/>
         </h:column>
-        </h:dataTable>
-    </h:form>
+    </h:dataTable>
 </f:view>
 </html>

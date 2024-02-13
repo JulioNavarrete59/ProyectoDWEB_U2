@@ -1,10 +1,7 @@
 package com.concesionaria.dao;
 
 import com.concesionaria.idao.IVentasDao;
-import com.concesionaria.modelo.JPAUtil;
-import com.concesionaria.modelo.autos;
-import com.concesionaria.modelo.clientes;
-import com.concesionaria.modelo.ventas;
+import com.concesionaria.modelo.*;
 import jakarta.persistence.EntityManager;
 
 import java.util.List;
@@ -62,10 +59,10 @@ public class VentasImpl implements IVentasDao {
         return listaClientes;
     }
 
-    /*@Override
+    @Override
     public List<empleados> obtenerEmpleados() {
         List<empleados> listaEmpleados;
         listaEmpleados = entityManager.createQuery("SELECT e FROM empleados e").getResultList();
         return listaEmpleados;
-    }*/
+    }
 }
