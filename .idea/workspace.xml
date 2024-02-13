@@ -9,24 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e5b683c8-97fc-42cb-ab98-be40088d47a8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/ventas/crear.xhtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/ventas/index.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/concesionaria/controlador/VentasController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/concesionaria/controlador/VentasController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/concesionaria/dao/VentasImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/concesionaria/dao/VentasImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/concesionaria/idao/IVentasDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/concesionaria/idao/IVentasDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/concesionaria/modelo/detalleVenta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/concesionaria/modelo/detalleVenta.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/concesionaria/modelo/ventas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/concesionaria/modelo/ventas.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/autos/crear.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/autos/crear.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/autos/index.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/autos/index.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/clientes/crear.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/clientes/crear.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/clientes/index.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/clientes/index.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/empleados/crear.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/empleados/crear.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/empleados/index.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/empleados/index.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.xhtml" afterDir="false" />
-    </list>
+    <list default="true" id="e5b683c8-97fc-42cb-ab98-be40088d47a8" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

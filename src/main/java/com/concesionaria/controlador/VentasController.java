@@ -42,6 +42,9 @@ public class VentasController {
 
     public VentasController() {
         nuevaVenta = new ventas();
+        venta = new ventas();
+        detalle = new detalleVenta();
+        empleado = new empleados();
         cars = new ArrayList<>();
         autosList = obtenerAutos();
         clientesList = obtenerClientes();
