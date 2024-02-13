@@ -15,14 +15,13 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                height: 100vh;
                 margin: 0;
             }
 
             .login-form {
                 width: 300px;
                 background-color: #ffffff;
-                padding: 20px;
+                padding: 10px;
                 border-radius: 10px;
                 box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             }
@@ -32,11 +31,11 @@
             }
 
             .form-control {
-                margin-bottom: 15px;
+                margin-bottom: 10px;
             }
 
             .btn-primary {
-                width: 80%;
+                width: 100%;
             }
         </style>
     </h:head>
@@ -46,19 +45,19 @@
                 <!-- Agregar foto -->
                 <h:graphicImage library="imagenes" name="logo.png" style="width: 100%;" />
 
-                <h:outputLabel for="username" value="Username:" styleClass="form-label" />
-                <h:inputText id="username" value="#{loginBean.username}" required="true" styleClass="form-control" />
+                <h:outputLabel for="username" value="Usuario:" styleClass="form-label" />
+                <h:inputText id="username" value="#{loginBean.username}" required="true" styleClass="form-control" requiredMessage="Por favor, ingrese el nombre de usuario." />
                 <h:message for="username" styleClass="form-text text-danger" />
 
-                <h:outputLabel for="password" value="Password:" styleClass="form-label" />
-                <h:inputSecret id="password" value="#{loginBean.password}" required="true" styleClass="form-control" />
+                <h:outputLabel for="password" value="Contraseña:" styleClass="form-label" />
+                <h:inputSecret id="password" value="#{loginBean.password}" required="true" styleClass="form-control" requiredMessage="Por favor, ingrese la contraseña." />
                 <h:message for="password" styleClass="form-text text-danger" />
             </h:panelGrid>
 
             <h:commandButton value="Inicar sesión" action="#{loginBean.login}" styleClass="btn btn-primary" />
 
             <!-- Botón para registrar un nuevo usuario -->
-            <h:commandButton value="Registrar nuevo usuario" action="#{loginBean.redirectToRegister()}" styleClass="btn btn-secondary mt-2" />
+            <h:commandButton value="Registrar nuevo usuario" action="#{loginBean.redirectToRegister()}" styleClass="btn btn-secondary mt-2" immediate="true" />
 
             <!-- Enlace para recuperar una contraseña olvidada -->
             <h:outputLink value="forgotPassword.xhtml" styleClass="d-block mt-2">¿Olvidaste tu contraseña?</h:outputLink>
