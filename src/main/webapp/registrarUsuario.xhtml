@@ -1,0 +1,79 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+<f:view>
+    <h:head>
+        <title>Registrar Usuario</title>
+        <h:outputStylesheet library="webjars" name="bootstrap/5.3.0/css/bootstrap.min.css"/>
+        <h:outputScript name="webjars/bootstrap/5.3.0/js/bootstrap.bundle.min.js" />
+        <style>
+            body {
+                background-color: #f8f9fa;
+            }
+
+            .container {
+                max-width: 400px;
+            }
+
+            .card {
+                border: 1px solid #d6d6d6;
+                border-radius: 10px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                background-color: #ffffff;
+                padding: 20px;
+                margin-top: 50px;
+            }
+
+            .form-label {
+                font-weight: bold;
+            }
+
+            .form-control {
+                margin-bottom: 15px;
+            }
+
+            .btn-primary {
+                width: 100%;
+            }
+
+            .error-message {
+                color: red;
+            }
+        </style>
+    </h:head>
+    <h:body>
+        <div class="container">
+            <div class="card">
+                <h:form class="needs-validation" novalidate="true">
+                    <div class="mb-3">
+                        <h:outputLabel for="username" value="Username:" class="form-label" />
+                        <h:inputText id="username" value="#{loginBean.username}" required="true" class="form-control" />
+                        <div class="invalid-feedback">
+                            Please choose a username.
+                        </div>
+                        <h:message for="username" styleClass="error-message" />
+                    </div>
+
+                    <div class="mb-3">
+                        <h:outputLabel for="password" value="Password:" class="form-label" />
+                        <h:inputSecret id="password" value="#{loginBean.password}" required="true" class="form-control" />
+                        <div class="invalid-feedback">
+                            Please provide a valid password.
+                        </div>
+                    </div>
+
+                    <h:commandButton value="Register" action="#{loginBean.registrar()}" class="btn btn-primary" />
+
+                    <!-- Muestra mensaje de error si el usuario ya existe -->
+                    <h:panelGroup rendered="#{facesContext.maximumSeverity.ordinal eq 2}">
+                        <div class="error-message">El nombre de usuario ya existe. Por favor, elige otro nombre de usuario.</div>
+                    </h:panelGroup>
+                </h:form>
+            </div>
+        </div>
+    </h:body>
+</f:view>
+</html>

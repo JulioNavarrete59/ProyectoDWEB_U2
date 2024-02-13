@@ -1,0 +1,68 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+<f:view>
+    <h:head>
+        <title>Login</title>
+        <h:outputStylesheet library="webjars" name="bootstrap/5.3.0/css/bootstrap.min.css"/>
+        <h:outputScript name="webjars/bootstrap/5.3.0/js/bootstrap.bundle.min.js" />
+        <style>
+            body {
+                background-color: #f8f9fa;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 100vh;
+                margin: 0;
+            }
+
+            .login-form {
+                width: 300px;
+                background-color: #ffffff;
+                padding: 20px;
+                border-radius: 10px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            }
+
+            .form-label {
+                font-weight: bold;
+            }
+
+            .form-control {
+                margin-bottom: 15px;
+            }
+
+            .btn-primary {
+                width: 80%;
+            }
+        </style>
+    </h:head>
+    <h:body>
+        <h:form styleClass="login-form">
+            <h:panelGrid columns="1" styleClass="mb-3">
+                <!-- Agregar foto -->
+                <h:graphicImage library="imagenes" name="logo.png" style="width: 100%;" />
+
+                <h:outputLabel for="username" value="Username:" styleClass="form-label" />
+                <h:inputText id="username" value="#{loginBean.username}" required="true" styleClass="form-control" />
+                <h:message for="username" styleClass="form-text text-danger" />
+
+                <h:outputLabel for="password" value="Password:" styleClass="form-label" />
+                <h:inputSecret id="password" value="#{loginBean.password}" required="true" styleClass="form-control" />
+                <h:message for="password" styleClass="form-text text-danger" />
+            </h:panelGrid>
+
+            <h:commandButton value="Inicar sesión" action="#{loginBean.login}" styleClass="btn btn-primary" />
+
+            <!-- Botón para registrar un nuevo usuario -->
+            <h:commandButton value="Registrar nuevo usuario" action="#{loginBean.redirectToRegister()}" styleClass="btn btn-secondary mt-2" />
+
+            <!-- Enlace para recuperar una contraseña olvidada -->
+            <h:outputLink value="forgotPassword.xhtml" styleClass="d-block mt-2">¿Olvidaste tu contraseña?</h:outputLink>
+        </h:form>
+    </h:body>
+</f:view>
+</html>
