@@ -31,7 +31,6 @@ public class clientes {
     }
 
     //Constructor
-
     public clientes(int idCliente, String nombre, String apellido, String cedula, String telefono, String direccion, String correo) {
         this.idCliente = idCliente;
         this.nombre = nombre;
