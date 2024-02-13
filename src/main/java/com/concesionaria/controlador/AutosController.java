@@ -7,13 +7,10 @@ import jakarta.enterprise.context.RequestScoped;
 import jakarta.faces.context.FacesContext;
 import jakarta.inject.Named;
 import jdk.jfr.Name;
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 import java.util.Objects;
-
-//Anotación para el controlador}
 @RequestScoped
 //Nombre del bean
 @Named(value = "autosBean")
@@ -30,18 +27,18 @@ public class AutosController {
         Map<String, Object> sessionMap = FacesContext.getCurrentInstance().getExternalContext().getSessionMap();
         //Añadir el objeto usuario a la colección
         sessionMap.put("auto", oAutos);
-        return "/editar.xhtml";
+        return "/autos/editar.xhtml";
     }
     public String actualizar(autos auto){
         autosDao.modificar(auto);
-        return "/index.xhtml";
+        return "/autos/index.xhtml";
     }
     public void eliminar (int id){
         autosDao.eliminar(id);
     }
     public String registrar(){
         autosDao.registrar(auto);
-        return "/index.xhtml";
+        return "/autos/index.xhtml";
     }
     public String nuevo(){
         autos oAuto = new autos();

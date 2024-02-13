@@ -83,34 +83,21 @@
         </h:panelGrid>
 
 
-        <h:commandButton value="Agregar" action="#{ventasBean.addCar}" styleClass="btn btn-primary" />
+        <button type="button" onclick="agregarAuto()" class="btn btn-primary">Agregar</button>
 
-        <h:dataTable value="#{ventasBean.cars}" var="car" styleClass="table table-striped">
-            <h:column>
-                <f:facet name="header">Auto</f:facet>
-                <h:selectOneMenu value="#{car.auto}" styleClass="form-select">
-                    <f:selectItems value="#{autosBean.obtenerAuto()}" var="auto" itemValue="#{auto.idAuto}" itemLabel="#{auto.marca} #{auto.modelo} #{auto.anio}" />
-                </h:selectOneMenu>
-            </h:column>
-            <h:column>
-                <f:facet name="header">Cantidad</f:facet>
-                <h:inputText value="#{ventasBean.detalle.cantidad}" required="true" styleClass="form-control">
-                    <f:convertNumber minIntegerDigits="1" maxIntegerDigits="10" />
-                </h:inputText>
-            </h:column>
-            <h:column>
-                <f:facet name="header">Precio Unitario</f:facet>
-                <h:outputText value="#{ventasBean.detalle.precioVenta}" />
-            </h:column>
-            <h:column>
-                <f:facet name="header">Subtotal</f:facet>
-                <h:outputText value="#{ventasBean.venta.subtotal}" />
-            </h:column>
-            <h:column>
-                <f:facet name="header">Acciones</f:facet>
-                <!-- Aquí puedes agregar los botones de acciones -->
-            </h:column>
-        </h:dataTable>
+        <table id="tablaAuto">
+            <thead>
+            <tr>
+                <th>Auto</th>
+                <th>Cantidad</th>
+                <th>Precio</th>
+                <th>Total</th>
+            </tr>
+            </thead>
+            <tbody id="cuerpoTabla">
+
+            </tbody>
+        </table>
 
 
         <h:outputLabel for="total" value="Total" styleClass="form-label" />
@@ -127,4 +114,6 @@
     </h:form>
 
 </f:view>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="../js/ventas.js"></script>
 </html>

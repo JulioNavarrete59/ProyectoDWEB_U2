@@ -68,10 +68,7 @@ public class VentasController {
     public List<ventas> obtenerVentas() {
         return ventasDao.obtenerVentas();
     }
-
-
     // Getters y setters
-
     public List<autos> getAutosList() {
         return autosList;
     }
@@ -156,25 +153,12 @@ public class VentasController {
         this.detalle = detalle;
     }
 
-    public void addCar() {
-        // Crear un nuevo detalle de venta
-        detalleVenta detalle = new detalleVenta();
-        ventas venta = new ventas();
-
-        // Establecer las propiedades del detalle
-        detalle.setAuto(this.auto);
-        detalle.setCantidad(this.detalle.getCantidad());
-        detalle.setPrecioVenta(this.detalle.getPrecioVenta());
-
-        // Calcular el subtotal
-        float subtotal = (float) (this.detalle.getCantidad() * this.detalle.getPrecioVenta());
-        venta.setSubtotal(subtotal);
-
-        // Agregar el detalle a la lista de detalles
-        this.cars.add(detalle.getAuto());
-
-        // Actualizar el total de la venta
-        this.venta.setSubtotal(this.venta.getSubtotal() + subtotal);
+    public void addCar(autos auto) {
+        detalleVenta detalleVenta = new detalleVenta();
+        detalleVenta.setAuto(auto);
+        detalleVenta.setCantidad(1);
+        detalleVenta.setPrecioVenta(auto.getPrecio());
+        detalleVenta.setSubTotal(detalleVenta.getCantidad() * detalleVenta.getPrecioVenta());
+        this.detalles.add(detalleVenta);
     }
-
 }

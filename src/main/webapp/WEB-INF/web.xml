@@ -4,7 +4,7 @@
          xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd"
          version="5.0">
     <welcome-file-list>
-        <welcome-file>login.xhtml</welcome-file>
+        <welcome-file>index.xhtml</welcome-file>
     </welcome-file-list>
     <!-- Etiqueta para mapeo en Servlets -->
     <servlet>
@@ -15,6 +15,7 @@
         <!-- Carga del Servlet -->
         <load-on-startup>1</load-on-startup>
     </servlet>
+
     <!-- Mapeo de Servlets -->
     <servlet-mapping>
         <!-- Nombre del Servlet -->

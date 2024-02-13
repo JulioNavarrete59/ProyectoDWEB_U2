@@ -10,8 +10,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e5b683c8-97fc-42cb-ab98-be40088d47a8" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/concesionaria/dao/DetalleVentaImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/concesionaria/idao/IDetalleVentaDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/ventas.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/webContexts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/login.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/login.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/concesionaria/controlador/AutosController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/concesionaria/controlador/AutosController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/concesionaria/controlador/VentasController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/concesionaria/controlador/VentasController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/concesionaria/modelo/autos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/concesionaria/modelo/autos.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/concesionaria/modelo/detalleVenta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/concesionaria/modelo/detalleVenta.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/concesionaria/modelo/ventas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/concesionaria/modelo/ventas.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/ventas/crear.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/ventas/crear.xhtml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,15 +32,18 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
-        <option value="Interface" />
-        <option value="JavaScript File" />
-        <option value="Class" />
         <option value="jsf" />
+        <option value="Interface" />
+        <option value="Class" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/main/webapp/autos/crear.xhtml" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="KubernetesApiProvider">{
   &quot;isMigrated&quot;: true
@@ -71,6 +84,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "MavenSettings",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -172,6 +186,7 @@
       <workItem from="1707687018394" duration="8085000" />
       <workItem from="1707749959668" duration="2316000" />
       <workItem from="1707763244377" duration="11911000" />
+      <workItem from="1707839958502" duration="10453000" />
     </task>
     <servers />
   </component>

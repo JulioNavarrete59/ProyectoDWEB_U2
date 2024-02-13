@@ -2,8 +2,6 @@ package com.concesionaria.modelo;
 
 import jakarta.persistence.*;
 
-import java.util.List;
-
 //Anotaciones
 @Entity
 //Nombre de la tabla
@@ -20,12 +18,11 @@ public class autos {
     @Column
     private String anio;
     @Column
-    private String precio;
+    private double precio;
     @Lob
     @Column
     private byte[] foto;
-    /*@OneToMany(mappedBy = "auto", cascade = CascadeType.ALL, orphanRemoval = true)
-    private List<ventas> ventasList;*/
+
 
     //Constructor
     public autos() {
@@ -61,11 +58,11 @@ public class autos {
         this.anio = anio;
     }
 
-    public String getPrecio() {
+    public double getPrecio() {
         return precio;
     }
 
-    public void setPrecio(String precio) {
+    public void setPrecio(double precio) {
         this.precio = precio;
     }
 
@@ -76,14 +73,6 @@ public class autos {
     public void setFoto(byte[] foto) {
         this.foto = foto;
     }
-
-    /*public List<ventas> getVentasList() {
-        return ventasList;
-    }
-
-    public void setVentasList(List<ventas> ventasList) {
-        this.ventasList = ventasList;
-    }*/
 
     @Override
     public String toString() {

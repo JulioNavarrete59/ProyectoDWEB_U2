@@ -14,7 +14,7 @@ public class detalleVenta {
     @Column
     private double precioVenta;
     @Column
-    private String detalle;
+    private double subTotal;
     @ManyToOne
     private autos auto;
     @ManyToOne
@@ -47,12 +47,12 @@ public class detalleVenta {
         this.precioVenta = precioVenta;
     }
 
-    public String getDetalle() {
-        return detalle;
+    public double getSubTotal() {
+        return subTotal;
     }
 
-    public void setDetalle(String detalle) {
-        this.detalle = detalle;
+    public void setSubTotal(double subTotal) {
+        this.subTotal = subTotal;
     }
 
     public autos getAuto() {
@@ -77,7 +77,7 @@ public class detalleVenta {
                 "idDetalleVenta=" + idDetalleVenta +
                 ", cantidad=" + cantidad +
                 ", precioVenta=" + precioVenta +
-                ", detalle='" + detalle + '\'' +
+                ", detalle='" + subTotal + '\'' +
                 '}';
     }
 }

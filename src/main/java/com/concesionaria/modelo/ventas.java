@@ -25,9 +25,6 @@ public class ventas {
     @ManyToOne
     private empleados empleado;
 
-    /*@OneToMany
-    private List<detalleVenta> detalleVenta;*/
-
     @ManyToOne
     private clientes cliente;
 
@@ -99,6 +96,27 @@ public class ventas {
         this.empleado = empleado;
     }
 
+    /*public void addDetalleVenta(detalleVenta detalleVenta) {
+        this.detalleVentas.add(detalleVenta);
+        detalleVenta.setVenta(this);
+    }
+
+    public void updateValues() {
+        this.subtotal = 0;
+        this.ice = 0;
+        this.total = 0;
+
+        for (detalleVenta detalleVenta : this.detalleVentas) {
+            this.total += detalleVenta.getSubtotal();
+        }
+
+        this.ice = this.total * 0.17;
+        this.total = this.total + this.ice;
+
+        this.subtotal = Math.round(this.subtotal * 100.0) / 100.0;
+        this.ice = Math.round(this.ice * 100.0) / 100.0;
+        this.total = Math.round(this.total * 100.0) / 100.0;
+    }*/
     @Override
     public String toString() {
         return "ventas{" +
