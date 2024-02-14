@@ -13,11 +13,11 @@
         <link rel="stylesheet" type="text/css" href="css/styles.css"/>
     </h:head>
     <h:body>
-    <!-- Navigation -->
+        <!-- Navigation -->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="collapse navbar-collapse">
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item"><a class="nav-link text-white" href="#">Inicio</a></li>
+                    <li class="nav-item active"><a class="nav-link text-white" href="#">Inicio</a></li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Autos
@@ -58,17 +58,125 @@
             </div>
         </nav>
 
+        <!-- Parte de inicio -->
+        <div class="container">
+            <h2 class="text-center">Bienvenido a la Concesionaria de Autos J³S S.A</h2>
+            <p class="text-center">Explora nuestra amplia selección de vehículos de las mejores marcas del mercado. En nuestra concesionaria, nos esforzamos por brindarte la mejor experiencia al elegir tu próximo automóvil. Ya sea que busques un elegante sedán, un versátil SUV o un potente deportivo, aquí encontrarás el vehículo perfecto que se ajuste a tus necesidades y estilo de vida.</p>
+            <!-- Agrega aquí el contenido adicional que desees mostrar en la página de inicio -->
+
+            <!-- Agregamos las tarjetas con los autos disponibles -->
+            <div class="row justify-content-center">
+                <!-- Tarjeta para la marca Volkswagen -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="https://static.patiotuerca.com/assets/brands/vehiclesBrands/png/volkswagen.png" class="card-img-top" alt="Volkswagen"></img>
+                        <div class="card-body">
+                            <h5 class="card-title">Volkswagen</h5>
+                            <p class="card-text">Modelos disponibles: Golf, Tiguan, Polo, Passat</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tarjeta para la marca Great Wall -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="https://static.patiotuerca.com/assets/brands/vehiclesBrands/png/great_wall.png" class="card-img-top" alt="Great Wall"></img>
+                        <div class="card-body">
+                            <h5 class="card-title">Great Wall</h5>
+                            <p class="card-text">Modelos disponibles: Haval H6, Wingle 6, Poer</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tarjeta para la marca Suzuki -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="https://static.patiotuerca.com/assets/brands/vehiclesBrands/png/suzuki.png" class="card-img-top" alt="Suzuki"></img>
+                        <div class="card-body">
+                            <h5 class="card-title">Suzuki</h5>
+                            <p class="card-text">Modelos disponibles: Swift, Vitara, Jimny, S-Cross</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tarjeta para la marca Mercedes Benz -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="https://static.patiotuerca.com/assets/brands/vehiclesBrands/png/mercedes_benz.png" class="card-img-top" alt="Mercedes Benz"></img>
+                        <div class="card-body">
+                            <h5 class="card-title">Mercedes Benz</h5>
+                            <p class="card-text">Modelos disponibles: C-Class, E-Class, GLC, S-Class</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tarjeta para la marca Renault -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="https://static.patiotuerca.com/assets/brands/vehiclesBrands/png/renault.png" class="card-img-top" alt="Renault"></img>
+                        <div class="card-body">
+                            <h5 class="card-title">Renault</h5>
+                            <p class="card-text">Modelos disponibles: Clio, Megane, Duster, Captur</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tarjeta de presentacion con Bootstrap - Cards-->
+        <div class="container">
+            <h2 class="text-center">Estructura jerarquica Concesionaria de Autos J³S S.A</h2>
+            <!-- Contenedor de Tarjetas -->
+            <div class="row justify-content-center">
+                <!-- Primer Tarjeta -->
+                <div class="col-md-3 mb-4">
+                    <div class="card">
+                        <h:graphicImage library="img" name="julio.jpeg" alt="Foto 1" class="card-img-top user-image" />
+                        <div class="card-body">
+                            <h5 class="card-title">JULIO NAVARRETE</h5>
+                            <p class="card-text">Gerente</p>
+                            <p class="card-text">Contacto: janavarrete8@espe.edu.ec</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Segunda Tarjeta -->
+                <div class="col-md-3 mb-4">
+                    <div class="card">
+                        <h:graphicImage library="img" name="josue.jpeg" alt="Foto 2" class="card-img-top user-image" />
+                        <div class="card-body">
+                            <h5 class="card-title">BYRON ORMAZA</h5>
+                            <p class="card-text">Asesor Ventas</p>
+                            <p class="card-text">Contacto: bjormaza@espe.edu.ec</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tercera Tarjeta -->
+                <div class="col-md-3 mb-4">
+                    <div class="card">
+                        <h:graphicImage library="img" name="tfa.jpeg" alt="Foto 3" class="card-img-top user-image" />
+                        <div class="card-body">
+                            <h5 class="card-title">STEFANY ERAZO</h5>
+                            <p class="card-text">Marketing</p>
+                            <p class="card-text">Contacto: scerazo1@espe.edu.ec</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cuarta Tarjeta -->
+                <div class="col-md-3 mb-4">
+                    <div class="card">
+                        <h:graphicImage library="img" name="jair.jpeg" alt="Foto 4" class="card-img-top user-image" />
+                        <div class="card-body">
+                            <h5 class="card-title">JAIR SANCHEZ</h5>
+                            <p class="card-text">DPTO. Financiero</p>
+                            <p class="card-text">Contacto: jssanchez9@espe.edu.ec</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </h:body>
-
-
-    <!--h:outputLabel value="Indice"/>
-    <h:form styleClass="vertical-navigation">
-        <h:commandButton value="AUTOS" action="#{indexController.autos()}" styleClass="navigation
-                    -button"></h:commandButton>
-
-        <h:commandButton value="CLIENTES" action="#{indexController.clientes()}" styleClass="navigation
-                    -button"></h:commandButton>
-        <h:commandButton value="EMPLEADOS" action="#{indexController.empleados()}" styleClass="navigation-button"></h:commandButton>
-    </h:form-->
 </f:view>
 </html>
