@@ -11,6 +11,11 @@
   <component name="ChangeListManager">
     <list default="true" id="e5b683c8-97fc-42cb-ab98-be40088d47a8" name="Changes" comment="index.xhtml">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/img/jair.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/imagenes/jair.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/img/josue.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/imagenes/josue.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/img/julio.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/imagenes/julio.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/img/tfa.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/imagenes/tfa.jpeg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/index.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.xhtml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -24,8 +29,8 @@
         <option value="CSS File" />
         <option value="jsf" />
         <option value="Interface" />
-        <option value="Class" />
         <option value="JavaScript File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -34,6 +39,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/src/main/webapp/autos/crear.xhtml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/webapp/autos/editar.xhtml" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="KubernetesApiProvider">{
   &quot;isMigrated&quot;: true
@@ -88,13 +94,14 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\julio\IdeaProjects\ProyectoDWEB_U2\src\main\webapp\resources\imagenes" />
       <recent name="C:\Users\julio\IdeaProjects\ProyectoDWEB_U2\src\main\webapp\resources" />
       <recent name="C:\Users\julio\IdeaProjects\ProyectoDWEB_U2\src\main\webapp" />
       <recent name="C:\Users\julio\IdeaProjects\ProyectoDWEB_U2\src\main\resources" />
     </key>
   </component>
   <component name="RunManager">
-    <configuration name="GlassFish 7.0.6" type="GlassfishConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="GlassFish 7.0.11" ALTERNATIVE_JRE_ENABLED="true" ALTERNATIVE_JRE_PATH="17" nameIsGenerated="true">
+    <configuration name="GlassFish 7.0.6" type="GlassfishConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="GlassFish 7.0.6" ALTERNATIVE_JRE_ENABLED="true" ALTERNATIVE_JRE_PATH="17" nameIsGenerated="true">
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
         <artifact name="ProyectoDWEB_U2:war exploded">
@@ -184,6 +191,11 @@
       <workItem from="1707687018394" duration="8085000" />
       <workItem from="1707749959668" duration="2316000" />
       <workItem from="1707763244377" duration="11911000" />
+      <workItem from="1707839958502" duration="25920000" />
+      <workItem from="1707839958502" duration="10453000" />
+      <workItem from="1707852359143" duration="3812000" />
+      <workItem from="1707839958502" duration="19501000" />
+      <workItem from="1707878706298" duration="6669000" />
       <workItem from="1707839958502" duration="10453000" />
       <workItem from="1707852359143" duration="3812000" />
       <workItem from="1707839958502" duration="19501000" />
