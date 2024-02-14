@@ -10,21 +10,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e5b683c8-97fc-42cb-ab98-be40088d47a8" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/webContexts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/concesionaria/controlador/ClientesController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/concesionaria/controlador/ClientesController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/concesionaria/modelo/clientes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/concesionaria/modelo/clientes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/clientes/editar.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/clientes/editar.xhtml" afterDir="false" />
-=======
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/autos/editar.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/autos/editar.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/empleados/editar.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/empleados/editar.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/ventas/index.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/ventas/index.xhtml" afterDir="false" />
->>>>>>> f2225e3cedb8a61a41adf0fbe5ed79420090a068
->>>>>>> a3bade8f2a3087eaded19bbe978f955ded0b85f7
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/ventas.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/ventas.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/ventas/crear.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/ventas/crear.xhtml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,8 +27,8 @@
         <option value="CSS File" />
         <option value="jsf" />
         <option value="Interface" />
-        <option value="Class" />
         <option value="JavaScript File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -73,26 +63,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "GlassFish Server.GlassFish 7.0.11.executor": "Run",
-    "GlassFish Server.GlassFish 7.0.6.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/Stefany/Documentos/ESPE/6. SEXTO/DESARROLLO WEB/PARCIAL II/PROYECTO/ProyectoDWEB_U2",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "MavenSettings",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;GlassFish Server.GlassFish 7.0.11.executor&quot;: &quot;Run&quot;,
+    &quot;GlassFish Server.GlassFish 7.0.6.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Stefany/Documentos/ESPE/6. SEXTO/DESARROLLO WEB/PARCIAL II/PROYECTO/ProyectoDWEB_U2&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\julio\IdeaProjects\ProyectoDWEB_U2\src\main\webapp\resources" />
@@ -101,7 +91,7 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration name="GlassFish 7.0.6" type="GlassfishConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="GlassFish 7.0.11" ALTERNATIVE_JRE_ENABLED="true" ALTERNATIVE_JRE_PATH="17" nameIsGenerated="true">
+    <configuration name="GlassFish 7.0.6" type="GlassfishConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="GlassFish 7.0.6" ALTERNATIVE_JRE_ENABLED="true" ALTERNATIVE_JRE_PATH="17" nameIsGenerated="true">
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
         <artifact name="ProyectoDWEB_U2:war exploded">
@@ -191,16 +181,11 @@
       <workItem from="1707687018394" duration="8085000" />
       <workItem from="1707749959668" duration="2316000" />
       <workItem from="1707763244377" duration="11911000" />
-<<<<<<< HEAD
       <workItem from="1707839958502" duration="25920000" />
-=======
-<<<<<<< HEAD
       <workItem from="1707839958502" duration="10453000" />
       <workItem from="1707852359143" duration="3812000" />
-=======
       <workItem from="1707839958502" duration="19501000" />
->>>>>>> f2225e3cedb8a61a41adf0fbe5ed79420090a068
->>>>>>> a3bade8f2a3087eaded19bbe978f955ded0b85f7
+      <workItem from="1707878706298" duration="6669000" />
     </task>
     <servers />
   </component>
