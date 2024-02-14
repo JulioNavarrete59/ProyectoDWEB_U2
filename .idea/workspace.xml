@@ -9,10 +9,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e5b683c8-97fc-42cb-ab98-be40088d47a8" name="Changes" comment="">
+    <list default="true" id="e5b683c8-97fc-42cb-ab98-be40088d47a8" name="Changes" comment="index.xhtml">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/index.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/login.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/login.xhtml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -189,6 +188,23 @@
       <workItem from="1707852359143" duration="3812000" />
       <workItem from="1707839958502" duration="19501000" />
     </task>
+    <task id="LOCAL-00001" summary="Agregar Cards Autos">
+      <option name="closed" value="true" />
+      <created>1707882894244</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1707882894244</updated>
+    </task>
+    <task id="LOCAL-00002" summary="index.xhtml">
+      <option name="closed" value="true" />
+      <created>1707883047431</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1707883047431</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -223,5 +239,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Agregar Cards Autos" />
+    <MESSAGE value="index.xhtml" />
+    <option name="LAST_COMMIT_MESSAGE" value="index.xhtml" />
   </component>
 </project>

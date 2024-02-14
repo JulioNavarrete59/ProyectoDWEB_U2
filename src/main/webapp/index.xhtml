@@ -11,6 +11,7 @@
         <h:outputStylesheet library="webjars" name="bootstrap/5.3.0/css/bootstrap.min.css"/>
         <h:outputScript name="webjars/bootstrap/5.3.0/js/bootstrap.bundle.min.js" />
         <link rel="stylesheet" type="text/css" href="css/styles.css"/>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet"></link>
     </h:head>
     <h:body>
         <!-- Navigation -->
@@ -61,8 +62,14 @@
         <!-- Parte de inicio -->
         <div class="container">
             <h2 class="text-center">Bienvenido a la Concesionaria de Autos J³S S.A</h2>
-            <p class="text-center">Explora nuestra amplia selección de vehículos de las mejores marcas del mercado. En nuestra concesionaria, nos esforzamos por brindarte la mejor experiencia al elegir tu próximo automóvil. Ya sea que busques un elegante sedán, un versátil SUV o un potente deportivo, aquí encontrarás el vehículo perfecto que se ajuste a tus necesidades y estilo de vida.</p>
-            <!-- Agrega aquí el contenido adicional que desees mostrar en la página de inicio -->
+            <div style="text-align: center;">
+                <img src="https://autolasa.com.ec/uploads/images/787x530home1-6494b642414cb456826794-656fa7d500c90221567879.jpg" alt="Concesionaria de Autos J³.S S.A"></img>
+            </div>
+            <p class="text-justify">Explora nuestra amplia selección de vehículos de las mejores marcas del mercado. En nuestra concesionaria, nos esforzamos por brindarte la mejor experiencia al elegir tu próximo automóvil. Ya sea que busques un elegante sedán, un versátil SUV o un potente deportivo, aquí encontrarás el vehículo perfecto que se ajuste a tus necesidades y estilo de vida.</p>
+            <!-- Agregamos aquí el contenido adicional que desees mostrar en la página de inicio -->
+            <div style="text-align: center;">
+                <h2 style="color: #092f11; font-size: 24px;">Los autos usados más vendidos en Ecuador</h2>
+            </div>
 
             <!-- Agregamos las tarjetas con los autos disponibles -->
             <div class="row justify-content-center">
@@ -120,18 +127,82 @@
                         </div>
                     </div>
                 </div>
+                <!-- Tarjeta para la marca Chevrolet -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="//static.patiotuerca.com/assets/brands/vehiclesBrands/png/chevrolet.png" class="card-img-top" alt="Chevrolet"></img>
+                        <div class="card-body">
+                            <h5 class="card-title">Chevrolet</h5>
+                            <p class="card-text">Modelos disponibles: Spark GT, Sail, Aveo Family, Grand Vitara 5p 4x2, Captiva</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tarjeta para la marca Kia -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="//static.patiotuerca.com/assets/brands/vehiclesBrands/png/kia.png" class="card-img-top" alt="Kia"></img>
+                        <div class="card-body">
+                            <h5 class="card-title">Kia</h5>
+                            <p class="card-text">Modelos disponibles: Sportage R, Stonic, PICANTO LX, PICANTO EX 1.2, NIRO Hibrido</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tarjeta para la marca Toyota -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="//static.patiotuerca.com/assets/brands/vehiclesBrands/png/toyota.png" class="card-img-top" alt="Toyota"></img>
+                        <div class="card-body">
+                            <h5 class="card-title">Toyota</h5>
+                            <p class="card-text">Modelos disponibles: Fortuner 2.7, Yaris, RAV 4, Fortuner 4.0, Toyota Tundra</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tarjeta para la marca Ford -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="//static.patiotuerca.com/assets/brands/vehiclesBrands/png/ford.png" class="card-img-top" alt="Ford"></img>
+                        <div class="card-body">
+                            <h5 class="card-title">Ford</h5>
+                            <p class="card-text">Modelos disponibles: Explorer XLT, Escape, Edge, F150, Ecosport</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tarjeta para la marca Hyundai -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="//static.patiotuerca.com/assets/brands/vehiclesBrands/png/hyundai.png" class="card-img-top" alt="Hyundai"></img>
+                        <div class="card-body">
+                            <h5 class="card-title">Hyundai</h5>
+                            <p class="card-text">Modelos disponibles: Tucson, Santa Fe, Tucson IX, Fortuner 4.0, TUCSON TL</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tarjeta para la marca Nissan -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="//static.patiotuerca.com/assets/brands/vehiclesBrands/png/nissan.png" class="card-img-top" alt="Nissan"></img>
+                        <div class="card-body">
+                            <h5 class="card-title">Nissan</h5>
+                            <p class="card-text">Modelos disponibles: X-Trail, Versa, X-Trail Sense, Kicks, X-Trail Classic</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
-        <!-- Tarjeta de presentacion con Bootstrap - Cards-->
         <div class="container">
-            <h2 class="text-center">Estructura jerarquica Concesionaria de Autos J³S S.A</h2>
+            <h2 class="text-center">Estructura jerárquica Concesionaria de Autos J³S S.A</h2>
             <!-- Contenedor de Tarjetas -->
             <div class="row justify-content-center">
                 <!-- Primer Tarjeta -->
                 <div class="col-md-3 mb-4">
-                    <div class="card">
-                        <h:graphicImage library="img" name="julio.jpeg" alt="Foto 1" class="card-img-top user-image" />
+                    <div class="card bg-primary text-white">
+                        <img src="img/julio.jpeg" alt="Yisus" class="card-img-top user-image"></img>
                         <div class="card-body">
                             <h5 class="card-title">JULIO NAVARRETE</h5>
                             <p class="card-text">Gerente</p>
@@ -142,8 +213,8 @@
 
                 <!-- Segunda Tarjeta -->
                 <div class="col-md-3 mb-4">
-                    <div class="card">
-                        <h:graphicImage library="img" name="josue.jpeg" alt="Foto 2" class="card-img-top user-image" />
+                    <div class="card bg-danger text-white">
+                        <img src="img/josue.jpeg" alt="Josue Ormaza" class="card-img-top user-image"></img>
                         <div class="card-body">
                             <h5 class="card-title">BYRON ORMAZA</h5>
                             <p class="card-text">Asesor Ventas</p>
@@ -154,8 +225,8 @@
 
                 <!-- Tercera Tarjeta -->
                 <div class="col-md-3 mb-4">
-                    <div class="card">
-                        <h:graphicImage library="img" name="tfa.jpeg" alt="Foto 3" class="card-img-top user-image" />
+                    <div class="card bg-success text-white">
+                        <img src="img/tfa.jpg" alt="Tnt Tefa" class="card-img-top user-image"></img>
                         <div class="card-body">
                             <h5 class="card-title">STEFANY ERAZO</h5>
                             <p class="card-text">Marketing</p>
@@ -166,8 +237,8 @@
 
                 <!-- Cuarta Tarjeta -->
                 <div class="col-md-3 mb-4">
-                    <div class="card">
-                        <h:graphicImage library="img" name="jair.jpeg" alt="Foto 4" class="card-img-top user-image" />
+                    <div class="card bg-info text-white">
+                        <img src="img/jair.jpeg" alt="Jair Sanchez" class="card-img-top user-image"></img>
                         <div class="card-body">
                             <h5 class="card-title">JAIR SANCHEZ</h5>
                             <p class="card-text">DPTO. Financiero</p>
@@ -177,6 +248,35 @@
                 </div>
             </div>
         </div>
+        <footer class="bg-dark text-white py-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <p>Concesionaria de Autos J³S S.A</p>
+                        <p>Dirección: Espe KM 24</p>
+                        <p>Teléfono: +123456789</p>
+                        <p>Email: j3s.sa@concesionaria.com</p>
+                    </div>
+                    <div class="col-md-6">
+                        <p>Síguenos en redes sociales:</p>
+                        <ul class="list-inline">
+                            <!-- Ícono de Facebook -->
+                            <li class="list-inline-item"><a href="#"><i class="fab fa-facebook"></i></a></li>
+                            <!-- Ícono de Twitter -->
+                            <li class="list-inline-item"><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            <!-- Ícono de Instagram -->
+                            <li class="list-inline-item"><a href="#"><i class="fab fa-instagram"></i></a></li>
+                            <!-- Ícono de YouTube -->
+                            <li class="list-inline-item"><a href="#"><i class="fab fa-youtube"></i></a></li>
+                            <!-- Ícono de Skype -->
+                            <li class="list-inline-item"><a href="#"><i class="fab fa-skype"></i></a></li>
+                            <!-- Ícono de WhatsApp -->
+                            <li class="list-inline-item"><a href="#"><i class="fab fa-whatsapp"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </h:body>
 </f:view>
 </html>
