@@ -1,10 +1,7 @@
 package com.concesionaria.controlador;
 
-import com.concesionaria.dao.AutosImpl;
 import com.concesionaria.dao.ClientesImpl;
-import com.concesionaria.idao.IAutosDao;
 import com.concesionaria.idao.IClientesDao;
-import com.concesionaria.modelo.autos;
 import com.concesionaria.modelo.clientes;
 import jakarta.enterprise.context.RequestScoped;
 import jakarta.faces.context.FacesContext;
@@ -30,18 +27,18 @@ public class ClientesController {
         Map<String, Object> sessionMap = FacesContext.getCurrentInstance().getExternalContext().getSessionMap();
         //Añadir el objeto usuario a la colección
         sessionMap.put("cliente", oClientes);
-        return "/editar.xhtml";
+        return "/clientes/editar.xhtml";
     }
     public String actualizar(clientes cliente){
         clientesDao.modificar(cliente);
-        return "/index.xhtml";
+        return "/clientes/index.xhtml";
     }
     public void eliminar (int id){
         clientesDao.eliminar(id);
     }
     public String registrar(clientes clientes){
         clientesDao.registrar(clientes);
-        return "/index.xhtml";
+        return "/clientes/index.xhtml";
     }
     /*public String nuevo(){
         clientes oCliente = new clientes();
