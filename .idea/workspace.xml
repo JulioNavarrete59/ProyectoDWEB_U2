@@ -11,15 +11,12 @@
   <component name="ChangeListManager">
     <list default="true" id="e5b683c8-97fc-42cb-ab98-be40088d47a8" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-<<<<<<< HEAD
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/ventas.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/ventas.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/ventas/crear.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/ventas/crear.xhtml" afterDir="false" />
-=======
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/img/jair.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/imagenes/jair.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/img/josue.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/imagenes/josue.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/img/julio.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/imagenes/julio.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/img/tfa.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/imagenes/tfa.jpeg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/index.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/login.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/login.xhtml" afterDir="false" />
->>>>>>> 2c01fde42ede1f198a07d25fae15762949b0e272
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,6 +94,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\julio\IdeaProjects\ProyectoDWEB_U2\src\main\webapp\resources\imagenes" />
       <recent name="C:\Users\julio\IdeaProjects\ProyectoDWEB_U2\src\main\webapp\resources" />
       <recent name="C:\Users\julio\IdeaProjects\ProyectoDWEB_U2\src\main\webapp" />
       <recent name="C:\Users\julio\IdeaProjects\ProyectoDWEB_U2\src\main\resources" />
@@ -193,17 +191,14 @@
       <workItem from="1707687018394" duration="8085000" />
       <workItem from="1707749959668" duration="2316000" />
       <workItem from="1707763244377" duration="11911000" />
-<<<<<<< HEAD
       <workItem from="1707839958502" duration="25920000" />
       <workItem from="1707839958502" duration="10453000" />
       <workItem from="1707852359143" duration="3812000" />
       <workItem from="1707839958502" duration="19501000" />
       <workItem from="1707878706298" duration="6669000" />
-=======
       <workItem from="1707839958502" duration="10453000" />
       <workItem from="1707852359143" duration="3812000" />
       <workItem from="1707839958502" duration="19501000" />
->>>>>>> 2c01fde42ede1f198a07d25fae15762949b0e272
     </task>
     <servers />
   </component>
